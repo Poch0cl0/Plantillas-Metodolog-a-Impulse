@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../" />
+    <title>PREMIUMNET — Servicios</title>
+    <meta
+      name="description"
+      content="Asesoría de tesis, análisis estadístico, redacción académica, levantamiento de observaciones y preparación para sustentación. Acompañamiento en cada etapa."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+
+    <main>
+      <!-- Hero -->
+      <section class="sv-hero">
+        <div class="container">
+          <div class="sv-hero__grid">
+            <div class="hero-entrance">
+              <div class="badge badge--eyebrow">
+                <span class="badge__dot badge__dot--ring"></span>
+                <span>Servicios</span>
+              </div>
+              <h1>El acompañamiento que necesitas, en cada etapa</h1>
+              <p class="body-lg">
+                Selecciona el área en la que necesitas apoyo y descubre cómo podemos ayudarte
+                con rigor metodológico y atención personalizada.
+              </p>
+            </div>
+            <div class="sv-hero__visual" data-reveal="fade-left">
+              <img
+                src="images/servicios-hero.png"
+                alt="Asesoría académica especializada en tesis universitarias"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Catálogo -->
+      <section class="sv-catalog">
+        <div class="container">
+          <header class="section-header" data-reveal="fade-up">
+            <span class="caption text-blue">Catálogo de servicios</span>
+            <h2 class="section-header__title">Soluciones para cada necesidad de tu investigación</h2>
+          </header>
+
+          <div class="sv-catalog__grid">
+            <article
+              class="sv-service-card hover-lift"
+              id="asesoria-tesis"
+              data-reveal="fade-up"
+              data-reveal-delay="0"
+            >
+              <div class="sv-service-card__img">
+                <img src="images/servicio-asesoria.png" alt="Asesoría de tesis" />
+              </div>
+              <div class="sv-service-card__body">
+                <span class="sv-service-card__chip">Pregrado &amp; Posgrado</span>
+                <h3 class="h3">Asesoría de tesis</h3>
+                <p class="body-sm sv-service-card__desc">
+                  Acompañamiento metodológico y académico para estructurar y desarrollar tu
+                  investigación desde el planteamiento hasta la redacción final.
+                </p>
+                <button type="button" class="btn btn--ghost" data-open-contact>
+                  <span>Conocer servicio</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="sv-service-card hover-lift"
+              id="analisis-estadistico"
+              data-reveal="fade-up"
+              data-reveal-delay="80"
+            >
+              <div class="sv-service-card__img">
+                <img src="images/servicio-estadistica.png" alt="Análisis estadístico" />
+              </div>
+              <div class="sv-service-card__body">
+                <span class="sv-service-card__chip">SPSS, R, Python, STATA</span>
+                <h3 class="h3">Análisis estadístico</h3>
+                <p class="body-sm sv-service-card__desc">
+                  Procesamiento, análisis e interpretación rigurosa de datos empíricos para tu
+                  investigación con tablas en formato APA 7.
+                </p>
+                <button type="button" class="btn btn--ghost" data-open-contact>
+                  <span>Conocer servicio</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="sv-service-card hover-lift"
+              id="redaccion-academica"
+              data-reveal="fade-up"
+              data-reveal-delay="160"
+            >
+              <div class="sv-service-card__img">
+                <img src="images/servicio-redaccion.png" alt="Redacción académica" />
+              </div>
+              <div class="sv-service-card__body">
+                <span class="sv-service-card__chip">APA 7, Vancouver, IEEE</span>
+                <h3 class="h3">Redacción académica</h3>
+                <p class="body-sm sv-service-card__desc">
+                  Revisión y mejora de coherencia, estructura, claridad formal y citación
+                  académica internacional.
+                </p>
+                <button type="button" class="btn btn--ghost" data-open-contact>
+                  <span>Conocer servicio</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="sv-service-card hover-lift"
+              id="levantamiento-observaciones"
+              data-reveal="fade-up"
+              data-reveal-delay="240"
+            >
+              <div class="sv-service-card__img">
+                <img src="images/servicio-observaciones.png" alt="Levantamiento de observaciones" />
+              </div>
+              <div class="sv-service-card__body">
+                <span class="sv-service-card__chip">Respuesta a dictamen</span>
+                <h3 class="h3">Levantamiento de observaciones</h3>
+                <p class="body-sm sv-service-card__desc">
+                  Revisión técnica y absolución exhaustiva de observaciones emitidas por
+                  dictaminadores y jurados.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn--ghost"
+                  data-open-contact
+                  data-stage="tengo_observaciones"
+                >
+                  <span>Conocer servicio</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="sv-service-card hover-lift sv-service-card--wide"
+              id="preparacion-sustentacion"
+              data-reveal="fade-up"
+              data-reveal-delay="320"
+            >
+              <div class="sv-service-card__img">
+                <img src="images/servicio-sustentacion.png" alt="Preparación para sustentación" />
+              </div>
+              <div class="sv-service-card__body">
+                <span class="sv-service-card__chip">Diapositivas y simulacro</span>
+                <h3 class="h3">Preparación para sustentación</h3>
+                <p class="body-sm sv-service-card__desc">
+                  Entrenamiento oratorio, diseño de diapositivas de impacto y simulación ante
+                  preguntas de jurado.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn--ghost"
+                  data-open-contact
+                  data-stage="estoy_por_sustentar"
+                >
+                  <span>Conocer servicio</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <div class="sv-help-band" data-reveal="fade-up">
+            <div>
+              <h3 class="h3">¿No sabes qué servicio necesitas?</h3>
+              <p class="body-sm" style="margin-top: 0.25rem">
+                Conversa con uno de nuestros asesores metodológicos para diagnosticar el estado
+                actual de tu investigación y definir una hoja de ruta clara.
+              </p>
+            </div>
+            <button type="button" class="btn btn--navy" data-open-contact>
+              <span>Hablar con un asesor</span>
+              <i class="fa-solid fa-arrow-right btn__icon"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diferenciación -->
+      <section class="sv-diff">
+        <div class="container">
+          <header class="section-header" data-reveal="fade-up">
+            <span class="caption text-blue">Metodología &amp; rigor</span>
+            <h2 class="section-header__title">Más que una asesoría: acompañamiento durante tu proceso</h2>
+          </header>
+
+          <div class="sv-diff__grid">
+            <div class="sv-diff__visual" data-reveal="fade-right">
+              <img
+                src="images/servicios-metodologia.png"
+                alt="Asesor metodológico acompañando a estudiante en su investigación"
+              />
+              <div class="sv-diff__badge">
+                <div>
+                  <strong>Garantía de rigor metodológico</strong>
+                  <p class="body-sm" style="margin: 0">Enfoque cuantitativo, cualitativo y mixto</p>
+                </div>
+                <span class="badge badge--blue">Acompañamiento 1 a 1</span>
+              </div>
+            </div>
+
+            <div data-reveal="fade-left">
+              <div class="sv-pillar">
+                <span class="sv-pillar__num">01</span>
+                <div>
+                  <h3 class="h3">Atención personalizada</h3>
+                  <p class="body-sm">
+                    Cada investigación tiene necesidades diferentes y abordajes conceptuales
+                    propios de su disciplina.
+                  </p>
+                </div>
+              </div>
+              <div class="sv-pillar">
+                <span class="sv-pillar__num">02</span>
+                <div>
+                  <h3 class="h3">Especialización</h3>
+                  <p class="body-sm">
+                    Profesionales con experiencia directa en diferentes áreas de investigación
+                    universitaria.
+                  </p>
+                </div>
+              </div>
+              <div class="sv-pillar">
+                <span class="sv-pillar__num">03</span>
+                <div>
+                  <h3 class="h3">Seguimiento</h3>
+                  <p class="body-sm">
+                    Revisamos tus avances de manera estructurada y definimos los próximos pasos
+                    para no perder ritmo.
+                  </p>
+                </div>
+              </div>
+              <div class="sv-pillar">
+                <span class="sv-pillar__num">04</span>
+                <div>
+                  <h3 class="h3">Orientación clara</h3>
+                  <p class="body-sm">
+                    Te ayudamos a entender qué hacer y por qué hacerlo, brindándote autonomía y
+                    solidez frente al jurado.
+                  </p>
+                </div>
+              </div>
+              <blockquote
+                class="body-md"
+                style="
+                  margin-top: 1rem;
+                  padding: 1rem 1.25rem;
+                  border-left: 4px solid var(--color-professional-blue);
+                  background: var(--color-white);
+                  border-radius: var(--radius-lg);
+                  font-style: italic;
+                "
+              >
+                Nuestro objetivo no es simplemente avanzar un documento. Es ayudarte a
+                comprender y desarrollar tu investigación con total seguridad.
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="sv-cta">
+        <div class="container">
+          <div class="sv-cta__inner" data-reveal="zoom">
+            <div>
+              <span class="badge badge--gold" style="margin-bottom: 0.75rem">Diagnóstico inicial</span>
+              <h2 class="sv-cta__title h2">¿Listo para culminar tu tesis con respaldo profesional?</h2>
+              <p class="sv-cta__desc body-md">
+                Envíanos tu tema, dictamen de correcciones o documento actual. Un asesor
+                analizará tu caso y te presentará una solución adaptada a tu situación.
+              </p>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; flex-shrink: 0">
+              <a
+                href="https://wa.me/51999999999?text=Hola,%20quiero%20agendar%20un%20diagn%C3%B3stico%20de%20tesis"
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp btn__icon"></i>
+                <span>Contactar vía WhatsApp</span>
+              </a>
+              <button type="button" class="btn btn--ghost-light" data-open-contact>
+                <i class="fa-solid fa-file-circle-check btn__icon"></i>
+                <span>Enviar dictamen para evaluación</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-container"></div>
+    <div id="whatsapp-float-container"></div>
+    <div id="contact-modal-container"></div>
+
+    <script src="js/cargarComponentes.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact-modal.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
+</html>

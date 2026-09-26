@@ -1,0 +1,49 @@
+.cta-diagnostico {
+  background-color: var(--color-deep-navy);
+  padding-block: var(--space-xl);
+}
+
+.cta-diagnostico__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  padding: var(--space-xl);
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.cta-diagnostico__content {
+  max-width: 40rem;
+}
+
+.cta-diagnostico__eyebrow {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-xs);
+}
+
+.cta-diagnostico__title {
+  color: var(--color-white);
+  margin-bottom: var(--space-xs);
+}
+
+.cta-diagnostico__desc {
+  color: #98a2b3;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1023px) {
+  .cta-diagnostico__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

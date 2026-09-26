@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../" />
+    <title>PREMIUMNET — Preguntas frecuentes</title>
+    <meta
+      name="description"
+      content="Resuelve tus dudas sobre asesoría de tesis, análisis estadístico, observaciones y más. Asesor virtual y catálogo de preguntas frecuentes."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+
+    <main>
+      <!-- Hero -->
+      <section class="fq-hero">
+        <div class="container">
+          <div class="fq-hero__grid">
+            <div class="hero-entrance">
+              <div class="badge badge--eyebrow">
+                <span class="badge__dot badge__dot--ring"></span>
+                <span>Resolución de dudas</span>
+              </div>
+              <h1>Preguntas frecuentes</h1>
+              <p class="body-lg">
+                Resolvemos algunas de las preguntas más comunes antes de comenzar. Nuestro
+                compromiso es garantizar solidez metodológica y rigor científico para tu grado
+                académico.
+              </p>
+
+              <div class="fq-search">
+                <i class="fa-solid fa-search"></i>
+                <input
+                  type="search"
+                  id="faqSearchInput"
+                  placeholder="Escribe tu duda (ej. maestría, análisis estadístico, plazos)..."
+                  autocomplete="off"
+                />
+                <button
+                  type="button"
+                  id="faqClearSearch"
+                  hidden
+                  style="
+                    position: absolute;
+                    right: 0.75rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: none;
+                    border: none;
+                    color: var(--color-gray);
+                    cursor: pointer;
+                  "
+                  aria-label="Limpiar búsqueda"
+                >
+                  <i class="fa-solid fa-times"></i>
+                </button>
+              </div>
+
+              <div class="fq-filters">
+                <span class="body-sm" style="color: var(--color-gray)">Filtros rápidos:</span>
+                <button type="button" class="fq-filter" data-filter="pregrado">Pregrado</button>
+                <button type="button" class="fq-filter" data-filter="maestria">Maestrías</button>
+                <button type="button" class="fq-filter" data-filter="estadistica">Estadística</button>
+                <button type="button" class="fq-filter" data-filter="observaciones">Observaciones</button>
+                <button type="button" class="fq-filter is-active" data-filter="">Ver todas</button>
+              </div>
+            </div>
+
+            <div class="fq-hero__visual" data-reveal="fade-left">
+              <img src="images/faq-hero.png" alt="Estudiante buscando respuestas sobre su tesis" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Workspace -->
+      <section class="fq-workspace">
+        <div class="container">
+          <div class="fq-workspace__grid">
+            <!-- Agente virtual -->
+            <aside class="fq-chat" data-reveal="fade-right">
+              <div class="fq-chat__header">
+                <div class="fq-chat__header-left">
+                  <div class="fq-chat__avatar">
+                    <i class="fa-solid fa-robot"></i>
+                  </div>
+                  <div>
+                    <strong>Asesor Virtual PREMIUMNET</strong>
+                    <div class="fq-chat__status">
+                      <span class="fq-chat__status-dot"></span>
+                      En línea
+                    </div>
+                  </div>
+                </div>
+                <span class="fq-chat__tag">Asistente local</span>
+              </div>
+
+              <div class="fq-chat__messages" id="faqChatMessages">
+                <div class="fq-chat__bubble fq-chat__bubble--bot">
+                  ¡Hola! Soy tu asistente metodológico de <strong>PREMIUMNET</strong>. Puedo
+                  responder al instante las dudas frecuentes sobre tu tesis de pregrado o
+                  posgrado, o si prefieres, selecciona cualquiera de las preguntas del listado.
+                </div>
+                <div class="fq-chat__chips" id="faqWelcomeChips"></div>
+              </div>
+
+              <div class="fq-chat__input-area">
+                <form class="fq-chat__form" id="faqChatForm">
+                  <input
+                    type="text"
+                    id="faqChatInput"
+                    placeholder="Escribe tu pregunta sobre tesis, análisis o plazos..."
+                    autocomplete="off"
+                  />
+                  <button type="submit" class="fq-chat__send" aria-label="Enviar pregunta">
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </button>
+                </form>
+                <p class="body-sm" style="margin: 0.5rem 0 0; color: var(--color-gray); font-size: 0.75rem">
+                  Respuesta automatizada con rigor metodológico ·
+                  <a
+                    href="https://wa.me/51999999999"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="color: var(--color-professional-blue)"
+                    >Hablar con humano</a
+                  >
+                </p>
+              </div>
+            </aside>
+
+            <!-- Acordeón -->
+            <div data-reveal="fade-left">
+              <div class="fq-accordion__header">
+                <h2 class="h3">Catálogo metodológico</h2>
+                <span class="fq-accordion__count" id="faqResultCount">10 preguntas disponibles</span>
+              </div>
+
+              <div id="faqAccordion"></div>
+
+              <div class="fq-empty" id="faqEmpty" hidden>
+                <i class="fa-regular fa-face-frown"></i>
+                <p><strong>No se encontraron preguntas coincidentes</strong></p>
+                <p class="body-sm">
+                  Prueba escribiendo en el asesor virtual o contáctanos por WhatsApp.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="fq-cta">
+        <div class="container">
+          <div class="fq-cta__inner" data-reveal="zoom">
+            <span class="badge badge--gold">Atención personalizada</span>
+            <h2 class="fq-cta__title h2">¿No encuentras la respuesta que buscas?</h2>
+            <p class="fq-cta__desc body-md">
+              Nuestro equipo de asesores académicos está disponible para analizar tu caso
+              particular de manera personalizada y sin compromiso.
+            </p>
+            <div class="fq-cta__actions">
+              <a
+                href="https://wa.me/51999999999?text=Hola,%20tengo%20una%20consulta%20espec%C3%ADfica%20sobre%20mi%20tesis"
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp btn__icon"></i>
+                <span>Hablar con un asesor</span>
+              </a>
+              <button type="button" class="btn btn--ghost-light" data-open-contact>
+                <i class="fa-solid fa-stethoscope btn__icon"></i>
+                <span>Solicitar diagnóstico gratuito</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-container"></div>
+    <div id="whatsapp-float-container"></div>
+    <div id="contact-modal-container"></div>
+
+    <script src="js/cargarComponentes.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact-modal.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/faq.js"></script>
+  </body>
+</html>

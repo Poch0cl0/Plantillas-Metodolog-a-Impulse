@@ -1,0 +1,139 @@
+/* Reading progress bar */
+.reading-progress {
+  position: fixed;
+  top: var(--navbar-height);
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--color-professional-blue), var(--color-gold));
+  z-index: 999;
+  transition: width 0.1s linear;
+}
+
+/* Scroll reveal */
+[data-reveal] {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-reveal="fade-up"] {
+  transform: translateY(2rem);
+}
+
+[data-reveal="fade-left"] {
+  transform: translateX(-2rem);
+}
+
+[data-reveal="fade-right"] {
+  transform: translateX(2rem);
+}
+
+[data-reveal="zoom"] {
+  transform: scale(0.95);
+}
+
+[data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hero entrance */
+.hero-entrance > * {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  animation: heroFadeIn 0.7s ease forwards;
+}
+
+.hero-entrance > *:nth-child(1) { animation-delay: 0.1s; }
+.hero-entrance > *:nth-child(2) { animation-delay: 0.2s; }
+.hero-entrance > *:nth-child(3) { animation-delay: 0.3s; }
+.hero-entrance > *:nth-child(4) { animation-delay: 0.4s; }
+.hero-entrance > *:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes heroFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Float animation */
+.float-gentle {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Card hover lift */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Chat bubble slide */
+.chat-bubble-enter {
+  animation: chatSlideIn 0.35s ease forwards;
+}
+
+@keyframes chatSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Typing indicator */
+.typing-indicator {
+  display: flex;
+  gap: 4px;
+  padding: 0.75rem 1rem;
+}
+
+.typing-indicator span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-gray);
+  animation: typingBounce 1.2s infinite;
+}
+
+.typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typingBounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-6px); }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero-entrance > * {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .float-gentle {
+    animation: none;
+  }
+
+  .hover-lift:hover {
+    transform: none;
+  }
+}

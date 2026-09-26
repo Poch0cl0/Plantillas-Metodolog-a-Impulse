@@ -1,0 +1,128 @@
+<div class="contact-modal" id="contactModal" aria-hidden="true" role="dialog" aria-labelledby="contactModalTitle">
+  <div class="contact-modal__overlay" data-close-contact></div>
+  <div class="contact-modal__dialog">
+    <button class="contact-modal__close" type="button" data-close-contact aria-label="Cerrar formulario">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="contact-modal__grid">
+      <!-- Panel izquierdo -->
+      <div class="contact-modal__info">
+        <span class="contact-modal__eyebrow">Diagnóstico Inicial y Contacto</span>
+        <h2 class="contact-modal__title" id="contactModalTitle">¿Quieres saber cómo avanzar con tu tesis?</h2>
+        <p class="contact-modal__desc">
+          Cuéntanos brevemente en qué situación te encuentras y un asesor metodológico podrá orientarte con precisión académica.
+        </p>
+
+        <div class="contact-modal__benefits">
+          <div class="contact-modal__benefit">
+            <div class="contact-modal__benefit-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <div>
+              <strong>Orientación inicial</strong>
+              <p>Evaluación preliminar de viabilidad temática sin costo ni compromiso.</p>
+            </div>
+          </div>
+          <div class="contact-modal__benefit">
+            <div class="contact-modal__benefit-icon"><i class="fa-solid fa-user-graduate"></i></div>
+            <div>
+              <strong>Atención personalizada</strong>
+              <p>Metodólogo asignado afín a tu carrera y universidad.</p>
+            </div>
+          </div>
+          <div class="contact-modal__benefit">
+            <div class="contact-modal__benefit-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div>
+              <strong>Respuesta por WhatsApp</strong>
+              <p>Comunicación directa y ágil en un plazo menor a 24 horas hábiles.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-modal__trust">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Tus datos están protegidos bajo estricto secreto profesional.</span>
+        </div>
+
+        <div class="contact-modal__advisor">
+          <img src="images/contacto-asesor.png" alt="Asesor metodológico PremiumNet" />
+          <div>
+            <span class="contact-modal__advisor-label">Cuerpo Consultor</span>
+            <strong>Doctores y metodólogos</strong>
+            <p>Asignación por línea de investigación y código de ética.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="contact-modal__form-wrap">
+        <div class="contact-modal__form-header">
+          <span class="caption text-blue">Formulario de consulta directa</span>
+          <h3 class="h3">Solicita tu diagnóstico metodológico</h3>
+          <p class="body-sm">Completa tus datos básicos. Un especialista revisará tu caso de inmediato.</p>
+        </div>
+
+        <form class="contact-modal__form" id="contactForm" novalidate>
+          <div class="contact-modal__field">
+            <label for="contactName">Nombre completo <span>*</span></label>
+            <div class="contact-modal__input-wrap">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="contactName" name="fullName" placeholder="Ej. Claudia Mendoza" required />
+            </div>
+          </div>
+
+          <div class="contact-modal__row">
+            <div class="contact-modal__field">
+              <label for="contactWhatsapp">Número de WhatsApp <span>*</span></label>
+              <div class="contact-modal__input-wrap">
+                <span class="contact-modal__prefix">+51</span>
+                <input type="tel" id="contactWhatsapp" name="whatsapp" placeholder="987 654 321" pattern="[0-9]{9}" required />
+              </div>
+            </div>
+            <div class="contact-modal__field">
+              <label for="contactCareer">Carrera profesional <span>*</span></label>
+              <div class="contact-modal__input-wrap">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <input type="text" id="contactCareer" name="career" placeholder="Ej. Psicología" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-modal__field">
+            <label for="contactStage">Etapa de tesis actual <span>*</span></label>
+            <div class="contact-modal__input-wrap">
+              <i class="fa-solid fa-book"></i>
+              <select id="contactStage" name="thesisStage" required>
+                <option value="" disabled selected>Elige tu etapa actual...</option>
+                <option value="estoy_empezando">Estoy empezando</option>
+                <option value="tengo_proyecto">Tengo proyecto</option>
+                <option value="estoy_desarrollando">Estoy desarrollando</option>
+                <option value="tengo_observaciones">Tengo observaciones</option>
+                <option value="estoy_por_sustentar">Estoy por sustentar</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="contact-modal__field">
+            <label for="contactSituation">Cuéntanos brevemente tu situación <span>*</span></label>
+            <textarea id="contactSituation" name="situation" rows="4" placeholder="Describe brevemente tus dudas, qué te pide tu asesor/jurado o en qué necesitas apoyo..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary contact-modal__submit" id="contactSubmitBtn">
+            <span>Solicitar orientación</span>
+            <i class="fa-solid fa-arrow-right btn__icon btn__icon--arrow"></i>
+          </button>
+
+          <div class="contact-modal__success" id="contactSuccess" hidden>
+            <i class="fa-solid fa-circle-check"></i>
+            <span>¡Solicitud recibida! Un metodólogo se comunicará contigo vía WhatsApp en breve.</span>
+          </div>
+
+          <p class="contact-modal__note">
+            <i class="fa-solid fa-lock"></i>
+            Tus datos están protegidos. No enviamos spam ni compartimos tu información.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
