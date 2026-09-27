@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TesisPro | Consultoría Especializada en Tesis Universitarias</title>
+  <meta name="description" content="Tu tesis, con un camino más claro. Acompañamiento personalizado 1 a 1 para cada etapa de tu investigación, desde el diseño inicial hasta la sustentación con honores." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%231d4ed8'/><path d='M20 10L6 17.5L20 25L34 17.5L20 10Z' fill='%23ffffff'/><path d='M11 20.5V26.5C11 28.5 15 30.5 20 30.5C25 30.5 29 28.5 29 26.5V20.5' stroke='%23ffffff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="#inicio" class="navbar__brand" aria-label="TesisPro Inicio">
+        <div class="navbar__logo-text">
+          Tesis<span>Pro</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav>
+        <ul class="navbar__nav" id="navbar-menu">
+          <li><a href="#servicios" class="navbar__link">Servicios</a></li>
+          <li><a href="#metodologia" class="navbar__link">Nuestra metodología</a></li>
+          <li><a href="#recursos" class="navbar__link">Recursos</a></li>
+          <li><a href="#testimonios" class="navbar__link">Testimonios</a></li>
+          <li><a href="#contacto" class="navbar__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="navbar__actions">
+        <a href="#agenda" class="navbar__cta-btn" data-open-modal="evaluar">
+          Agenda una evaluación
+        </a>
+        <button type="button" class="navbar__user-btn" aria-label="Perfil de usuario" data-open-modal="evaluar">
+          <i class="fa-solid fa-user"></i>
+        </button>
+        <button type="button" class="navbar__mobile-toggle" id="mobile-menu-toggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ==========================================================================
+         HERO SECTION (Image 1)
+         ========================================================================== -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <!-- Left Column: Copy & Actions -->
+        <div class="hero__content">
+          <div class="hero__eyebrow">
+            <span class="pill-badge pill-badge--blue">
+              CONSULTORÍA ESPECIALIZADA EN TESIS UNIVERSITARIAS
+            </span>
+          </div>
+
+          <h1 class="hero__title">
+            Tu tesis, con un
+            <span class="hero__title-blue">camino más claro.</span>
+          </h1>
+
+          <p class="hero__desc">
+            Transforma tus dudas metodológicas en un plan de trabajo riguroso. Acompañamiento personalizado 1 a 1 para cada etapa de tu investigación, desde el diseño inicial hasta la sustentación con honores.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#evaluacion" class="btn btn-primary hero__btn-primary" data-open-modal="evaluar">
+              <span>Quiero evaluar mi tesis</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#como-funciona" class="hero__btn-secondary">
+              <span>Descubrir cómo funciona</span>
+              <i class="fa-regular fa-circle-play"></i>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="hero__trust-pills">
+            <div class="hero__trust-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Atención 1 a 1 exclusiva</span>
+            </div>
+            <div class="hero__trust-item">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>Rigor SUNEDU y APA 7</span>
+            </div>
+            <div class="hero__trust-item">
+              <i class="fa-solid fa-globe"></i>
+              <span>Todo el Perú virtual</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual with Overlays -->
+        <div class="hero__visual">
+          <div class="hero__image-card">
+            <img src="images/hero_student.jpg" alt="Estudiante universitaria sustentando su tesis con honores" class="hero__image" />
+
+            <!-- Floating Overlay 1: Top Left Progress Gauge (91%) -->
+            <div class="hero-badge-top">
+              <div class="hero-gauge">
+                <svg viewBox="0 0 36 36">
+                  <path class="hero-gauge__bg"
+                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <path class="hero-gauge__progress"
+                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                </svg>
+                <span class="hero-gauge__text">91%</span>
+              </div>
+              <div class="hero-badge-top__info">
+                <div class="hero-badge-top__title">
+                  <i class="fa-solid fa-circle-check" style="color: #1d4ed8; font-size: 0.8rem;"></i>
+                  <span>Matriz Validada</span>
+                </div>
+                <span class="hero-badge-top__sub">Consistencia metodológica</span>
+              </div>
+            </div>
+
+            <!-- Floating Overlay 2: Bottom Left Photo Tag -->
+            <div class="hero-badge-case">
+              <span class="hero-badge-case__tag">CASO RECIENTE</span>
+              <div class="hero-badge-case__name">Sustentación sobresaliente</div>
+            </div>
+
+            <!-- Floating Overlay 3: Bottom Right Session Pill -->
+            <div class="hero-badge-session">
+              <div class="hero-badge-session__avatar">Dr.</div>
+              <div class="hero-badge-session__info">
+                <div class="hero-badge-session__tag">SESIÓN VIRTUAL 1:1</div>
+                <div class="hero-badge-session__name">Dr. Méndez (Metodólogo)</div>
+                <div class="hero-badge-session__time">
+                  <i class="fa-regular fa-clock"></i>
+                  <span>Hoy 17:00 PET (GMT-5)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: RUTA METODOLÓGICA ADAPTATIVA (Image 1)
+         ========================================================================== -->
+    <section class="section adaptive-route" id="metodologia">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">RUTA METODOLÓGICA ADAPTATIVA</span>
+          <h2 class="section-title">¿En qué punto de tu tesis te encuentras?</h2>
+          <p class="section-subtitle">
+            Selecciona tu situación actual para ver la hoja de ruta sugerida por nuestros asesores.
+          </p>
+        </div>
+
+        <!-- 4 Step Tabs -->
+        <div class="route-tabs-container">
+          <div class="route-tabs" role="tablist">
+            <button type="button" class="route-tab" data-step="1" role="tab">
+              1. Todavía no tengo tema
+            </button>
+            <button type="button" class="route-tab is-active" data-step="2" role="tab">
+              2. Desarrollando mi investigación
+            </button>
+            <button type="button" class="route-tab" data-step="3" role="tab">
+              3. Necesito resolver observaciones
+            </button>
+            <button type="button" class="route-tab" data-step="4" role="tab">
+              4. Preparando mi sustentación
+            </button>
+          </div>
+        </div>
+
+        <!-- Dynamic Route Card (Default Step 2) -->
+        <div class="route-card" id="route-display-card">
+          <div class="route-card__left">
+            <div class="route-card__stage" id="route-stage-text">
+              <i class="fa-solid fa-chart-line"></i>
+              <span>ETAPA 2 DE 4: EJECUCIÓN Y TRABAJO DE CAMPO</span>
+            </div>
+            <h3 class="route-card__title" id="route-title-text">
+              Estructuración del marco teórico, operacionalización y recojo de datos
+            </h3>
+            <p class="route-card__desc" id="route-desc-text">
+              Te orientamos en la búsqueda de antecedentes en Scopus/WoS, la formulación de instrumentos de recolección válidos y el diseño de la muestra para que avances con total seguridad metodológica.
+            </p>
+            <div class="route-card__metas">
+              <div class="route-card__meta-item" id="route-time-text">
+                <i class="fa-regular fa-clock"></i>
+                <span>Tiempo estimado: 3 a 5 semanas</span>
+              </div>
+              <div class="route-card__meta-item" id="route-deliverable-text">
+                <i class="fa-regular fa-file-lines"></i>
+                <span>Entregable: Capítulos I, II y III consolidados</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Recommended Step Action Box -->
+          <div class="route-card__action-box">
+            <div class="route-card__icon-wrap">
+              <i class="fa-regular fa-clipboard"></i>
+            </div>
+            <h4 class="route-card__action-title" id="route-action-title">Ruta recomendada</h4>
+            <p class="route-card__action-sub" id="route-action-sub">
+              Diagnóstico de congruencia entre variables y objetivos.
+            </p>
+            <a href="#agenda" class="btn btn-primary route-card__action-btn" data-open-modal="evaluar">
+              <span>Ver mi siguiente paso</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: STATS & AUDITORÍA TRAYECTORIA (Image 1)
+         ========================================================================== -->
+    <section class="section stats-section">
+      <div class="container stats-grid">
+        <!-- Left Large Navy/Blue Card -->
+        <div class="stat-card-featured">
+          <div class="stat-card-featured__top">
+            <span class="stat-card-featured__tag">AUDITORÍA & TRAYECTORIA</span>
+            <i class="fa-solid fa-award stat-card-featured__icon"></i>
+          </div>
+          <div class="stat-card-featured__number">+850</div>
+          <p class="stat-card-featured__desc">
+            Tesis y proyectos académicos aprobados con felicitación y honores
+          </p>
+          <div class="stat-card-featured__pill">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>100% de rigurosidad científica y no plagio garantizado</span>
+          </div>
+        </div>
+
+        <!-- Right Stats Column -->
+        <div class="stats-right-group">
+          <!-- 2 Stat Cards -->
+          <div class="stats-two-cards">
+            <div class="stat-box">
+              <div class="stat-box__header">
+                <div class="stat-box__number">98.4%</div>
+                <div class="stat-box__icon-wrap">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                </div>
+              </div>
+              <h3 class="stat-box__title">Satisfacción en asesorías</h3>
+              <p class="stat-box__sub">
+                Medición pos-sustentación en jurados universitarios colegiados.
+              </p>
+            </div>
+
+            <div class="stat-box">
+              <div class="stat-box__header">
+                <div class="stat-box__number">+35</div>
+                <div class="stat-box__icon-wrap">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+              </div>
+              <h3 class="stat-box__title">Universidades peruanas</h3>
+              <p class="stat-box__sub">
+                PUCP, UNMSM, UPC, USIL, UNI, ULima, UCSUR, UNSA y más.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bottom Wide Card -->
+          <div class="stat-wide-card">
+            <div class="stat-wide-card__left">
+              <div class="stat-wide-card__icon">
+                <i class="fa-solid fa-user-graduate"></i>
+              </div>
+              <div>
+                <h4 class="stat-wide-card__title">Cuerpo Consultor de Alto Nivel</h4>
+                <p class="stat-wide-card__desc">
+                  Docentes con grados de Magíster y Doctor (Ph.D.) en investigación científica y estadística aplicada.
+                </p>
+              </div>
+            </div>
+            <div class="stat-wide-card__badge">
+              REGISTRO CONCYTEC
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: METODOLOGÍA A TU MEDIDA (Image 2)
+         ========================================================================== -->
+    <section class="section section--alt" id="servicios">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">METODOLOGÍA A TU MEDIDA</span>
+          <h2 class="section-title">Dos formas claras de avanzar con tu investigación</h2>
+          <p class="section-subtitle">
+            Elige entre recursos guiados para autogestión o un plan de mentoría personalizada con revisión continua.
+          </p>
+        </div>
+
+        <div class="modalities-grid">
+          <!-- Card 1: Aprendizaje Autónomo -->
+          <div class="modality-card">
+            <div>
+              <div class="modality-card__icon-box modality-card__icon-box--light">
+                <i class="fa-solid fa-book-open-reader"></i>
+              </div>
+              <div class="modality-card__tag">PASO A PASO INDEPENDIENTE</div>
+              <h3 class="modality-card__title">Aprendizaje Autónomo</h3>
+              <p class="modality-card__desc">
+                Ideal si cuentas con tiempo y buscas herramientas probadas: matrices editables, checklists de formato APA 7 y guías metodológicas paso a paso sin costo alguno.
+              </p>
+              <div class="modality-card__checklist">
+                <div class="modality-card__checklist-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Matriz de consistencia en Excel personalizable</span>
+                </div>
+                <div class="modality-card__checklist-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Plantilla de redacción con normas APA 7ma edición</span>
+                </div>
+                <div class="modality-card__checklist-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Guías descargables de búsqueda en Scopus y Web of Science</span>
+                </div>
+              </div>
+            </div>
+            <a href="#recursos" class="btn btn-light-blue" style="width: 100%;">
+              <span>Acceder a recursos gratuitos</span>
+              <i class="fa-solid fa-download"></i>
+            </a>
+          </div>
+
+          <!-- Card 2: Asesoría Personalizada 1 a 1 -->
+          <div class="modality-card modality-card--featured">
+            <div class="modality-card__top-badge">
+              <span class="pill-badge pill-badge--navy">RECOMENDADO PARA TITULACIÓN</span>
+            </div>
+            <div>
+              <div class="modality-card__icon-box modality-card__icon-box--blue">
+                <i class="fa-solid fa-user-group"></i>
+              </div>
+              <h3 class="modality-card__title">Asesoría Personalizada 1 a 1</h3>
+              <p class="modality-card__desc">
+                Trabaja codo a codo con un asesor metodológico y un especialista estadístico asignados según tu especialidad. Sesiones en vivo, retroalimentación puntual en tus avances y simulacros reales de sustentación.
+              </p>
+
+              <!-- 2x2 Benefits Grid -->
+              <div class="modality-features-grid">
+                <div class="modality-subfeature">
+                  <div class="modality-subfeature__head">
+                    <i class="fa-solid fa-video"></i>
+                    <h4 class="modality-subfeature__title">Reuniones de trabajo en vivo</h4>
+                  </div>
+                  <p class="modality-subfeature__desc">
+                    Sesiones sincrónicas grabadas para tu repaso permanente.
+                  </p>
+                </div>
+
+                <div class="modality-subfeature">
+                  <div class="modality-subfeature__head">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <h4 class="modality-subfeature__title">Tratamiento estadístico</h4>
+                  </div>
+                  <p class="modality-subfeature__desc">
+                    Pruebas de hipótesis en SPSS, R o Jamovi con interpretación.
+                  </p>
+                </div>
+
+                <div class="modality-subfeature">
+                  <div class="modality-subfeature__head">
+                    <i class="fa-solid fa-file-shield"></i>
+                    <h4 class="modality-subfeature__title">Levantamiento de jurados</h4>
+                  </div>
+                  <p class="modality-subfeature__desc">
+                    Subsanación formal y fundamentada de dictámenes académicos.
+                  </p>
+                </div>
+
+                <div class="modality-subfeature">
+                  <div class="modality-subfeature__head">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h4 class="modality-subfeature__title">Simulacro con balotario</h4>
+                  </div>
+                  <p class="modality-subfeature__desc">
+                    Ensayo con preguntas críticas del jurado y diapositivas de impacto.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Actions Row -->
+            <div class="modality-card__actions">
+              <a href="#planes" class="btn btn-primary" data-open-modal="evaluar">
+                <span>Conocer la asesoría personalizada</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#evaluacion" class="modality-card__secondary-link">
+                <span>Evaluar mi caso gratis</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: FORMATOS DE ASESORÍA / PLANES (Image 2)
+         ========================================================================== -->
+    <section class="section" id="planes">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">FORMATOS DE ASESORÍA</span>
+          <h2 class="section-title">Planes estructurados según tu avance</h2>
+          <p class="section-subtitle">
+            Sin contratos ambiguos ni costos ocultos. Elige el alcance exacto que tu tesis requiere.
+          </p>
+        </div>
+
+        <div class="plans-grid">
+          <!-- Plan 1: Asesoría Puntual -->
+          <div class="plan-card">
+            <div>
+              <div class="plan-card__eyebrow">MÓDULO ENFOCADO</div>
+              <h3 class="plan-card__title">Asesoría Puntual</h3>
+              <p class="plan-card__desc">
+                Para dudas específicas en un capítulo, revisión técnica o consulta estadística de emergencia.
+              </p>
+              <div class="plan-card__modality-box">
+                Modalidad: Sesiones individuales de 90 min
+              </div>
+              <div class="plan-card__features">
+                <div class="plan-card__feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Revisión metodológica de avance</span>
+                </div>
+                <div class="plan-card__feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Reporte detallado de observaciones</span>
+                </div>
+                <div class="plan-card__feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Grabación completa de la sesión</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-outline-blue plan-card__cta-btn" data-open-modal="cotizar">
+              Solicitar cotización puntual
+            </button>
+          </div>
+
+          <!-- Plan 2: Acompañamiento por Hitos (Featured) -->
+          <div class="plan-card plan-card--featured">
+            <div class="plan-card__floating-badge">
+              ACOMPAÑAMIENTO POR ETAPAS · MÁS SOLICITADO
+            </div>
+            <div>
+              <div class="plan-card__eyebrow">PROGRESO GARANTIZADO</div>
+              <h3 class="plan-card__title">Acompañamiento por Hitos</h3>
+              <p class="plan-card__desc">
+                Avanza bloque por bloque validando entregables con tu asesor y la universidad sin estrés.
+              </p>
+              <div class="plan-card__modality-box">
+                Estructura Modular: Plan de Tesis + Ejecución + Resultados
+              </div>
+              <div class="plan-card__features">
+                <div class="plan-card__feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>4 a 6 sesiones sincrónicas por hito</span>
+                </div>
+                <div class="plan-card__feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Revisión de consistencia y operacionalización</span>
+                </div>
+                <div class="plan-card__feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Procesamiento estadístico y tablas APA 7</span>
+                </div>
+                <div class="plan-card__feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Escaneo de originalidad Turnitin oficial</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary plan-card__cta-btn" data-open-modal="evaluar">
+              <span>Elegir plan por etapas</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+          </div>
+
+          <!-- Plan 3: Asesoría Integral -->
+          <div class="plan-card">
+            <div>
+              <div class="plan-card__eyebrow">CICLO COMPLETO</div>
+              <h3 class="plan-card__title">Asesoría Integral</h3>
+              <p class="plan-card__desc">
+                Orientación integral desde la elección del tema y formulación del problema hasta la obtención del grado.
+              </p>
+              <div class="plan-card__modality-box">
+                Alcance: Proyecto + Informe final + Sustentación
+              </div>
+              <div class="plan-card__features">
+                <div class="plan-card__feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Acompañamiento ilimitado hasta aprobación</span>
+                </div>
+                <div class="plan-card__feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Levantamiento de observaciones de jurados</span>
+                </div>
+                <div class="plan-card__feature-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Simulacros con panel de doctores</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-outline-blue plan-card__cta-btn" data-open-modal="evaluar">
+              Postular a programa integral
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: FLUJO DE TRABAJO RIGUROSO (Image 3)
+         ========================================================================== -->
+    <section class="section section--alt" id="como-funciona">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">FLUJO DE TRABAJO RIGUROSO</span>
+          <h2 class="section-title">Cómo trabajamos juntos en tu investigación</h2>
+          <p class="section-subtitle">
+            Un proceso ordenado donde siempre sabes qué entregar y qué recibirás de retorno.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Step 01 -->
+          <div class="step-card">
+            <div class="step-card__top">
+              <span class="step-card__num">01</span>
+              <div class="step-card__icon">
+                <i class="fa-regular fa-clipboard"></i>
+              </div>
+            </div>
+            <h3 class="step-card__title">Diagnóstico Inicial</h3>
+            <p class="step-card__desc">
+              Revisamos tu reglamento universitario, tu matriz de consistencia o el estado actual de tu borrador.
+            </p>
+            <div class="step-card__box">
+              <div><strong>Tú entregas:</strong> Tu tema o borrador</div>
+              <div><strong>Recibes:</strong> Informe de viabilidad</div>
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="step-card">
+            <div class="step-card__top">
+              <span class="step-card__num">02</span>
+              <div class="step-card__icon">
+                <i class="fa-solid fa-person-walking"></i>
+              </div>
+            </div>
+            <h3 class="step-card__title">Plan Personalizado</h3>
+            <p class="step-card__desc">
+              Definimos un cronograma con fechas límite reales, asignando al asesor metodológico especialista.
+            </p>
+            <div class="step-card__box">
+              <div><strong>Tú entregas:</strong> Disponibilidad de horario</div>
+              <div><strong>Recibes:</strong> Ruta de trabajo por hitos</div>
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="step-card">
+            <div class="step-card__top">
+              <span class="step-card__num">03</span>
+              <div class="step-card__icon">
+                <i class="fa-solid fa-arrows-rotate"></i>
+              </div>
+            </div>
+            <h3 class="step-card__title">Acompañamiento Activo</h3>
+            <p class="step-card__desc">
+              Sesiones sincrónicas de avance, retroalimentación en manuscrito y validación de bases de datos.
+            </p>
+            <div class="step-card__box">
+              <div><strong>Tú entregas:</strong> Avances de capítulos</div>
+              <div><strong>Recibes:</strong> Correcciones anotadas + SPSS</div>
+            </div>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="step-card">
+            <div class="step-card__top">
+              <span class="step-card__num">04</span>
+              <div class="step-card__icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+            </div>
+            <h3 class="step-card__title">Preparación de Jurado</h3>
+            <p class="step-card__desc">
+              Simulacro con balotario de preguntas críticas, control Turnitin final y entrenamiento de oratoria académica.
+            </p>
+            <div class="step-card__box">
+              <div><strong>Tú entregas:</strong> Diapositivas preliminares</div>
+              <div><strong>Recibes:</strong> Feedback de jurado simulado</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: TESTIMONIOS & CASOS DE ÉXITO (Image 3)
+         ========================================================================== -->
+    <section class="section cases-section" id="testimonios">
+      <div class="container cases-grid">
+        <!-- Left: Featured Testimonial Quote -->
+        <div class="case-featured-card">
+          <div>
+            <div class="case-featured-card__stars-row">
+              <div class="case-featured-card__stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="case-featured-card__badge">Sustentación Aprobada con Felicitaciones</span>
+            </div>
+            <blockquote class="case-featured-card__quote">
+              «Estuve 7 meses estancada con las observaciones de metodología de mi jurado en la PUCP. En TesisPro me asignaron a un asesor doctor en administración que en 3 semanas me ayudó a replantear la operacionalización de variables y correr el análisis factorial. Sustenté el mes pasado y obtuve calificación sobresaliente.»
+            </blockquote>
+          </div>
+
+          <div class="case-featured-card__author">
+            <div class="case-featured-card__avatar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div>
+              <div class="case-featured-card__name">Mag. Claudia Salazar R.</div>
+              <div class="case-featured-card__uni">Maestría en Dirección Estratégica del Factor Humano • PUCP</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: 2 Stacked Mini-cases -->
+        <div class="cases-stacked-group">
+          <!-- Mini Case 1 -->
+          <div class="case-mini-card">
+            <div class="case-mini-card__eyebrow">
+              <span class="case-mini-card__tag">INGENIERÍA INDUSTRIAL</span>
+              <span class="case-mini-card__uni">UNMSM • Pregrado</span>
+            </div>
+            <h4 class="case-mini-card__title">De 12 observaciones a aprobación unánime</h4>
+            <p class="case-mini-card__desc">
+              Se reconstruyó la matriz de consistencia y se aplicó simulación Arena para modelar la mejora de procesos productivos.
+            </p>
+            <div class="case-mini-card__status">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Dictamen aprobado en primera ronda de reenvío</span>
+            </div>
+          </div>
+
+          <!-- Mini Case 2 -->
+          <div class="case-mini-card">
+            <div class="case-mini-card__eyebrow">
+              <span class="case-mini-card__tag">CIENCIAS DE LA SALUD</span>
+              <span class="case-mini-card__uni">UPCH • Maestría</span>
+            </div>
+            <h4 class="case-mini-card__title">Validación estadística en SPSS y sustentación sobresaliente</h4>
+            <p class="case-mini-card__desc">
+              Depuración de base de datos de 420 pacientes, regresión logística múltiple e interpretación epidemiológica rigurosa.
+            </p>
+            <div class="case-mini-card__status">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Aprobado con mención honrosa para publicación</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: CENTRO DE RECURSOS GRATUITOS (Image 3)
+         ========================================================================== -->
+    <section class="section" id="recursos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">CENTRO DE RECURSOS GRATUITOS</span>
+          <h2 class="section-title">Herramientas esenciales para tesistas</h2>
+          <p class="section-subtitle">
+            Descarga plantillas validadas por jurados universitarios para estructurar tu investigación.
+          </p>
+        </div>
+
+        <div class="resources-grid">
+          <!-- Resource Card 1 -->
+          <div class="resource-card">
+            <div>
+              <div class="resource-card__icon-box resource-card__icon-box--light">
+                <i class="fa-solid fa-table-cells-large"></i>
+              </div>
+              <div class="resource-card__format">PLANTILLA EXCEL .XLSX</div>
+              <h3 class="resource-card__title">Plantilla de Matriz de Consistencia</h3>
+              <p class="resource-card__desc">
+                Vincula problema general, objetivos, hipótesis, variables, dimensiones, indicadores y metodología sin inconsistencias.
+              </p>
+              <div class="resource-card__downloads">
+                <i class="fa-solid fa-download"></i>
+                <span>Más de 4,200 descargas</span>
+              </div>
+            </div>
+            <button type="button" class="btn btn-outline-blue resource-card__btn" data-open-modal="recurso" data-resource-name="Plantilla de Matriz de Consistencia">
+              <span>Descargar gratis</span>
+              <i class="fa-solid fa-download"></i>
+            </button>
+          </div>
+
+          <!-- Resource Card 2 (Featured with badge) -->
+          <div class="resource-card resource-card--featured">
+            <div class="resource-card__floating-badge">
+              RECURSO MÁS DESCARGADO
+            </div>
+            <div>
+              <div class="resource-card__icon-box resource-card__icon-box--blue">
+                <i class="fa-solid fa-folder-open"></i>
+              </div>
+              <div class="resource-card__format">PACK COMPLETO 2025</div>
+              <h3 class="resource-card__title">Kit Gratuito para Empezar tu Tesis</h3>
+              <p class="resource-card__desc">
+                Incluye guía de elección de tema, matriz de operacionalización, lista de 20 conectores académicos y modelo APA 7 listo para escribir.
+              </p>
+              <div class="resource-card__checklist">
+                <div class="resource-card__check-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Guía en PDF de 32 páginas explicadas</span>
+                </div>
+                <div class="resource-card__check-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Plantilla Word con estilos APA 7 configurados</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary resource-card__btn" data-open-modal="recurso" data-resource-name="Kit Gratuito para Empezar tu Tesis">
+              <span>Obtener mi kit gratuito</span>
+              <i class="fa-solid fa-bolt"></i>
+            </button>
+          </div>
+
+          <!-- Resource Card 3 -->
+          <div class="resource-card">
+            <div>
+              <div class="resource-card__icon-box resource-card__icon-box--light">
+                <i class="fa-solid fa-sliders"></i>
+              </div>
+              <div class="resource-card__format">CHECKLIST EN PDF</div>
+              <h3 class="resource-card__title">Checklist para Sustentar tu Tesis</h3>
+              <p class="resource-card__desc">
+                Verifica los 45 puntos críticos antes de entrar a la sala de jurados: desde la estructura de diapositivas hasta respuestas a objeciones.
+              </p>
+              <div class="resource-card__downloads">
+                <i class="fa-solid fa-download"></i>
+                <span>Más de 2,800 descargas</span>
+              </div>
+            </div>
+            <button type="button" class="btn btn-outline-blue resource-card__btn" data-open-modal="recurso" data-resource-name="Checklist para Sustentar tu Tesis">
+              <span>Descargar gratis</span>
+              <i class="fa-solid fa-download"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: NEWSLETTER STRIP (Image 4)
+         ========================================================================== -->
+    <section class="newsletter-strip">
+      <div class="container">
+        <div class="newsletter-bar">
+          <div class="newsletter-bar__left">
+            <div class="newsletter-bar__icon">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div>
+              <h4 class="newsletter-bar__title">Obtén acceso a toda nuestra biblioteca gratuita</h4>
+              <p class="newsletter-bar__desc">Enviamos guías metodológicas y resúmenes de normas cada semana.</p>
+            </div>
+          </div>
+          <form class="newsletter-bar__form" id="newsletter-form">
+            <input type="email" id="newsletter-email" class="newsletter-bar__input" placeholder="tu.correo@universidad.edu.pe" required />
+            <button type="submit" class="newsletter-bar__btn">Desbloquear</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: EVALUACIÓN ACADÉMICA GRATUITA / DIAGNÓSTICO EN 2 MIN (Image 4)
+         ========================================================================== -->
+    <section class="section eval-section" id="evaluacion">
+      <div class="container eval-grid">
+        <!-- Left: Copy & Bullet Benefits -->
+        <div class="eval-left">
+          <span class="section-eyebrow">EVALUACIÓN ACADÉMICA GRATUITA</span>
+          <h2 class="eval-left__title">
+            Conoce el estado real de tu investigación en 2 minutos
+          </h2>
+          <p class="eval-left__desc">
+            Completa las 4 preguntas para recibir una orientación metodológica personalizada y saber qué pasos priorizar según tu universidad.
+          </p>
+
+          <div class="eval-benefits-list">
+            <div class="eval-benefit-item">
+              <div class="eval-benefit-item__icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div>
+                <h4 class="eval-benefit-item__title">Claridad de viabilidad</h4>
+                <p class="eval-benefit-item__desc">
+                  Evaluamos si tu diseño metodológico cumple con el estándar de tu grado.
+                </p>
+              </div>
+            </div>
+
+            <div class="eval-benefit-item">
+              <div class="eval-benefit-item__icon">
+                <i class="fa-regular fa-calendar-days"></i>
+              </div>
+              <div>
+                <h4 class="eval-benefit-item__title">Cronograma aterrizado</h4>
+                <p class="eval-benefit-item__desc">
+                  Estimación realista de semanas de trabajo para tu sustentación.
+                </p>
+              </div>
+            </div>
+
+            <div class="eval-benefit-item">
+              <div class="eval-benefit-item__icon">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <div>
+                <h4 class="eval-benefit-item__title">Confidencialidad absoluta</h4>
+                <p class="eval-benefit-item__desc">
+                  Tus datos e idea de investigación están protegidos bajo contrato de ética.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Multi-Step Interactive Quiz Card -->
+        <div class="quiz-card">
+          <div class="quiz-card__header">
+            <span id="quiz-step-count">Paso 1 de 4</span>
+            <span id="quiz-percent">25% completado</span>
+          </div>
+
+          <div class="quiz-card__progress-bar">
+            <div class="quiz-card__progress-fill" id="quiz-progress-fill" style="width: 25%;"></div>
+          </div>
+
+          <!-- Step 1: Grado Académico -->
+          <div class="quiz-card__step-pane is-active" data-step="1">
+            <h3 class="quiz-card__question">¿Para qué grado académico es tu investigación?</h3>
+            <p class="quiz-card__subtext">Selecciona el nivel de titulación requerido.</p>
+            <div class="quiz-options-grid">
+              <label class="quiz-option-label is-selected">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">Pregrado / Licenciatura</span>
+              </label>
+              <label class="quiz-option-label">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">Maestría / Máster</span>
+              </label>
+              <label class="quiz-option-label">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">Doctorado (Ph.D.)</span>
+              </label>
+              <label class="quiz-option-label">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">Segunda Especialidad</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 2: Estado de avance -->
+          <div class="quiz-card__step-pane" data-step="2">
+            <h3 class="quiz-card__question">¿En qué fase se encuentra tu documento?</h3>
+            <p class="quiz-card__subtext">Indica tu avance actual para calcular el tiempo.</p>
+            <div class="quiz-options-grid">
+              <label class="quiz-option-label is-selected">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">Sin tema o delimitación inicial</span>
+              </label>
+              <label class="quiz-option-label">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">Plan o proyecto de tesis redactado</span>
+              </label>
+              <label class="quiz-option-label">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">Trabajo de campo / Datos por procesar</span>
+              </label>
+              <label class="quiz-option-label">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">Borrador final con dictamen de jurado</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 3: Desafío principal -->
+          <div class="quiz-card__step-pane" data-step="3">
+            <h3 class="quiz-card__question">¿Cuál es tu principal desafío metodológico?</h3>
+            <p class="quiz-card__subtext">Asignaremos al especialista idóneo para ti.</p>
+            <div class="quiz-options-grid">
+              <label class="quiz-option-label is-selected">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">Tratamiento estadístico (SPSS / R)</span>
+              </label>
+              <label class="quiz-option-label">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">Marco teórico y fuentes Scopus</span>
+              </label>
+              <label class="quiz-option-label">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">Levantamiento de observaciones</span>
+              </label>
+              <label class="quiz-option-label">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">Formato APA 7 y control Turnitin</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 4: Plazo de sustentación -->
+          <div class="quiz-card__step-pane" data-step="4">
+            <h3 class="quiz-card__question">¿Para cuándo proyectas tu sustentación?</h3>
+            <p class="quiz-card__subtext">Para estructurar el cronograma de trabajo por hitos.</p>
+            <div class="quiz-options-grid">
+              <label class="quiz-option-label is-selected">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">En menos de 1 mes (Urgente)</span>
+              </label>
+              <label class="quiz-option-label">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">En 2 a 3 meses</span>
+              </label>
+              <label class="quiz-option-label">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">Durante este ciclo académico</span>
+              </label>
+              <label class="quiz-option-label">
+                <span class="quiz-option-radio"></span>
+                <span class="quiz-option-text">Sin fecha definida aún</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="quiz-card__footer">
+            <button type="button" class="btn btn-outline-blue" id="quiz-prev-btn" style="display: none;">
+              <i class="fa-solid fa-arrow-left"></i>
+              <span>Anterior</span>
+            </button>
+            <button type="button" class="btn btn-primary" id="quiz-next-btn">
+              <span>Siguiente pregunta</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: SESIÓN DE EXPLORACIÓN VIRTUAL / CALENDAR (Image 4)
+         ========================================================================== -->
+    <section class="section booking-section" id="agenda">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">SESIÓN DE EXPLORACIÓN VIRTUAL</span>
+          <h2 class="section-title">Agenda una sesión de evaluación de 30 minutos</h2>
+          <p class="section-subtitle">
+            Conéctate por Google Meet con un coordinador metodológico para revisar tus índices y resolver inquietudes.
+          </p>
+        </div>
+
+        <div class="booking-card">
+          <!-- Calendar Column -->
+          <div class="calendar-wrap">
+            <div class="calendar-header">
+              <div>
+                <div class="calendar-month">Marzo 2025</div>
+                <span class="calendar-tz">Hora oficial de Lima, Perú (GMT-5)</span>
+              </div>
+              <div class="calendar-nav-btns">
+                <button type="button" class="calendar-nav-btn" aria-label="Mes anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                <button type="button" class="calendar-nav-btn" aria-label="Mes siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+            </div>
+
+            <!-- Calendar Days Grid -->
+            <div class="calendar-grid">
+              <div class="calendar-day-header">Lun</div>
+              <div class="calendar-day-header">Mar</div>
+              <div class="calendar-day-header">Mié</div>
+              <div class="calendar-day-header">Jue</div>
+              <div class="calendar-day-header">Vie</div>
+              <div class="calendar-day-header">Sáb</div>
+              <div class="calendar-day-header">Dom</div>
+
+              <!-- Week 1 -->
+              <div class="calendar-day-cell is-muted">24</div>
+              <div class="calendar-day-cell is-muted">25</div>
+              <div class="calendar-day-cell is-muted">26</div>
+              <div class="calendar-day-cell is-muted">27</div>
+              <div class="calendar-day-cell is-muted">28</div>
+              <div class="calendar-day-cell">1</div>
+              <div class="calendar-day-cell">2</div>
+
+              <!-- Week 2 -->
+              <div class="calendar-day-cell">3</div>
+              <div class="calendar-day-cell">4</div>
+              <div class="calendar-day-cell">5</div>
+              <div class="calendar-day-cell">6</div>
+              <div class="calendar-day-cell is-selected">7</div>
+              <div class="calendar-day-cell">8</div>
+              <div class="calendar-day-cell">9</div>
+
+              <!-- Week 3 -->
+              <div class="calendar-day-cell">10</div>
+              <div class="calendar-day-cell">11</div>
+              <div class="calendar-day-cell">12</div>
+              <div class="calendar-day-cell">13</div>
+              <div class="calendar-day-cell">14</div>
+              <div class="calendar-day-cell">15</div>
+              <div class="calendar-day-cell">16</div>
+            </div>
+
+            <!-- Calendar Legend -->
+            <div class="calendar-legend">
+              <div class="calendar-legend-item">
+                <span class="legend-dot legend-dot--blue"></span>
+                <span>Fecha seleccionada</span>
+              </div>
+              <div class="calendar-legend-item">
+                <span class="legend-dot legend-dot--ring"></span>
+                <span>Días con cupos disponibles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Time Slots & Form Column -->
+          <div class="booking-form-col">
+            <div class="booking-day-header">
+              <div>
+                <div class="booking-day-tag">DÍA SELECCIONADO</div>
+                <div class="booking-day-title" id="booking-selected-day-title">Viernes 7 de Marzo, 2025</div>
+              </div>
+              <div class="booking-day-meet">
+                <i class="fa-solid fa-video"></i>
+              </div>
+            </div>
+
+            <div class="booking-slots-label">Horarios disponibles (PET):</div>
+            <div class="booking-slots-grid">
+              <div class="booking-slot-pill">10:00 AM</div>
+              <div class="booking-slot-pill">03:00 PM</div>
+              <div class="booking-slot-pill is-selected">05:00 PM</div>
+              <div class="booking-slot-pill">07:00 PM</div>
+            </div>
+
+            <!-- Booking Inputs -->
+            <form id="booking-calendar-form">
+              <div class="booking-form-fields">
+                <div class="form-field-group">
+                  <label class="form-label" for="booking-name">Tu nombre y apellidos</label>
+                  <input type="text" id="booking-name" class="form-input" value="Carlos Mendoza" required />
+                </div>
+                <div class="form-field-group">
+                  <label class="form-label" for="booking-email">Correo para el enlace de Google Meet</label>
+                  <input type="email" id="booking-email" class="form-input" value="carlos.mendoza@pucp.edu.pe" required />
+                </div>
+              </div>
+              <button type="submit" class="booking-submit-btn" style="width: 100%;">
+                Confirmar cita virtual
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: DIVULGACIÓN Y MÉTODO / BLOG (Image 4)
+         ========================================================================== -->
+    <section class="section blog-section" id="blog">
+      <div class="container">
+        <div class="blog-top-row">
+          <div>
+            <span class="section-eyebrow">DIVULGACIÓN Y MÉTODO</span>
+            <h2 class="section-title">Artículos de investigación y consejos prácticos</h2>
+          </div>
+          <a href="#blog" class="blog-view-all">
+            <span>Explorar todos los artículos</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="blog-grid">
+          <!-- Featured Large Article Card -->
+          <article class="article-featured-card">
+            <div class="article-featured-img-wrap">
+              <img src="images/blog_study.jpg" alt="Estudiante en biblioteca investigando fuentes Scopus" class="article-featured-img" />
+              <div class="article-featured-badge">METODOLOGÍA DESTACADA</div>
+            </div>
+            <div class="article-featured-body">
+              <div>
+                <div class="article-meta">Lectura de 7 min • Febrero 2025</div>
+                <h3 class="article-featured-title">
+                  Cómo elegir un tema de tesis viable, actual y con fuentes indexadas en Scopus
+                </h3>
+                <p class="article-desc">
+                  El 60% del éxito de una tesis radica en la correcta delimitación de la variable y la disponibilidad real de la muestra. Aprende la técnica del embudo temático recomendada por jurados de posgrado.
+                </p>
+              </div>
+              <div class="article-featured-footer">
+                <div class="article-author">
+                  <div class="article-author-avatar">TP</div>
+                  <span class="article-author-name">Equipo de Investigación TesisPro</span>
+                </div>
+                <a href="#blog" class="article-link">
+                  <span>Leer artículo completo</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Right Stacked 2 Articles -->
+          <div class="blog-stacked-group">
+            <!-- Article 1 -->
+            <article class="article-mini-card">
+              <div>
+                <div class="article-meta">ESTADÍSTICA APLICADA • Lectura de 5 min</div>
+                <h3 class="article-mini-title">
+                  Pruebas paramétricas vs. no paramétricas: Cuándo usar Shapiro–Wilk y Kolmogórov–Smirnov
+                </h3>
+                <p class="article-desc">
+                  Guía paso a paso para verificar supuestos de normalidad y seleccionar la prueba de contraste adecuada en SPSS.
+                </p>
+              </div>
+              <div class="article-mini-footer">
+                <span class="article-tag-subtle">Actualizado SPSS 29</span>
+                <a href="#blog" class="article-link">
+                  <span>Leer más</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="article-mini-card">
+              <div>
+                <div class="article-meta">DEFENSA DE GRADO • Lectura de 4 min</div>
+                <h3 class="article-mini-title">
+                  Las 10 preguntas más difíciles del jurado examinador y cómo responder con solvencia
+                </h3>
+                <p class="article-desc">
+                  Cómo sustentar la validez de tu muestra, responder a la falta de antecedentes directos y defender las limitaciones.
+                </p>
+              </div>
+              <div class="article-mini-footer">
+                <span class="article-tag-subtle">Incluye balotario modelo</span>
+                <a href="#blog" class="article-link">
+                  <span>Leer más</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: PREGUNTAS FRECUENTES (FAQ) (Image 5)
+         ========================================================================== -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">TRANSPARENCIA Y GARANTÍA</span>
+          <h2 class="section-title">Preguntas Frecuentes</h2>
+          <p class="section-subtitle">
+            Resolvemos tus principales dudas sobre confidencialidad, modalidad y acompañamiento.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>¿Cómo funcionan los precios y formas de pago?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Los costos se estructuran según el nivel académico (pregrado, maestría o doctorado) y el estado real de tu investigación. Ofrecemos esquemas de pago fraccionados por entregables e hitos validados con tu universidad, sin compromisos indefinidos ni costos ocultos. Puedes abonar mediante transferencia bancaria, Yape, Plin o tarjetas de débito/crédito.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>¿Cuánto tiempo dura el acompañamiento metodológico?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Depende del plan seleccionado: las sesiones puntuales se ejecutan de inmediato en bloques de 90 minutos con reporte técnico en 48 horas. El plan por hitos suele completarse entre 3 y 6 semanas por bloque, y el programa integral acompaña al tesista de 3 a 5 meses hasta la obtención del grado y aprobación de jurados.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>¿Atienden a universidades de provincias y de todo el Perú?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Sí, brindamos atención 100% virtual a tesistas de todas las regiones del Perú (Arequipa, Cusco, Trujillo, Huancayo, Piura, Chiclayo, Iquitos, Puno, etc.) así como de universidades públicas y privadas de Lima (PUCP, UNMSM, UNI, UPC, USIL, ULima, UCSUR, UNSA, entre otras).
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>¿Qué incluye la evaluación y diagnóstico inicial gratuito?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                En una videollamada de 30 minutos por Google Meet, un coordinador metodológico revisa tu matriz de consistencia, el reglamento específico de tu facultad y las observaciones que hayas recibido. Recibirás una hoja de ruta con puntos críticos a subsanar y un cronograma estimado.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>¿Cómo protegen la confidencialidad y la ética académica?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Todos los proyectos se encuentran protegidos bajo un estricto Acuerdo de Confidencialidad y No Divulgación (NDA). Trabajamos bajo rigurosa ética científica SUNEDU: te guiamos y enseñamos para que tú seas el autor, dominador y defensor absoluto de tu tesis ante el jurado examinador.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: CONVOCATORIA DE ASESORÍA ACTIVA / FINAL CTA (Image 5)
+         ========================================================================== -->
+    <section class="section final-cta-section">
+      <div class="container">
+        <div class="final-cta-box">
+          <span class="final-cta-badge">CONVOCATORIA DE ASESORÍA ACTIVA</span>
+          <h2 class="final-cta-title">Da el siguiente paso hacia tu meta académica</h2>
+          <p class="final-cta-sub">
+            No dejes tu titulación para el próximo año. Agenda tu diagnóstico gratuito hoy y recibe una hoja de ruta metodológica clara y viable.
+          </p>
+          <div class="final-cta-actions">
+            <a href="#agenda" class="btn btn-white" data-open-modal="evaluar">
+              <i class="fa-regular fa-calendar-check" style="color: #1d4ed8;"></i>
+              <span>Agendar mi evaluación gratuita</span>
+            </a>
+            <a href="#evaluacion" class="btn btn-navy-outline">
+              <span>Realizar diagnóstico en 2 min</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="final-cta-trust">
+            <div class="final-cta-trust-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Sin compromiso inicial</span>
+            </div>
+            <div class="final-cta-trust-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Asesor especialista según tu carrera</span>
+            </div>
+            <div class="final-cta-trust-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Atención virtual en todo el Perú</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER (Image 5)
+       ========================================================================== -->
+  <footer class="site-footer" id="contacto">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col__brand">
+          <div class="footer-brand-title">Tesis<span>Pro</span></div>
+          <div class="footer-brand-tagline">CONSULTORÍA ACADÉMICA</div>
+          <p class="footer-brand-desc">
+            Acompañamiento metodológico de alto rigor y asesoría estadística para tesis de pregrado, maestría y doctorado en Perú y Latinoamérica.
+          </p>
+          <div class="footer-supervision-note">
+            Supervisión metodológica SUNEDU y CONCYTEC
+          </div>
+        </div>
+
+        <!-- Col 2: Servicios Académicos -->
+        <div>
+          <h4 class="footer-col-title">SERVICIOS ACADÉMICOS</h4>
+          <ul class="footer-links-list">
+            <li><a href="#servicios" class="footer-link">Estructuración de Plan de Tesis</a></li>
+            <li><a href="#servicios" class="footer-link">Asesoría Metodológica Integral</a></li>
+            <li><a href="#servicios" class="footer-link">Análisis Estadístico SPSS / R / Jamovi</a></li>
+            <li><a href="#servicios" class="footer-link">Control Antiplagio Turnitin</a></li>
+            <li><a href="#servicios" class="footer-link">Preparación para Sustentación</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Marco Legal y Cumplimiento -->
+        <div>
+          <h4 class="footer-col-title">MARCO LEGAL Y CUMPLIMIENTO</h4>
+          <ul class="footer-links-list">
+            <li><a href="#faq" class="footer-link">Políticas de Privacidad</a></li>
+            <li><a href="#faq" class="footer-link">Protección de Datos (Ley Nº 29733)</a></li>
+            <li><a href="#faq" class="footer-link">Términos del Servicio de Asesoría</a></li>
+            <li><a href="#faq" class="footer-link">📖 Libro de Reclamaciones</a></li>
+            <li class="footer-link" style="margin-top: 6px; font-weight: 600;">RUC: 20608492011</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Canal Directo -->
+        <div>
+          <h4 class="footer-col-title">CANAL DIRECTO</h4>
+          <p class="footer-brand-desc" style="margin-bottom: 14px;">
+            Atención personalizada a tesistas en todo el Perú (Lima, Arequipa, Trujillo, Cusco).
+          </p>
+          <div class="footer-contact-item">
+            <i class="fa-regular fa-envelope"></i>
+            <span>asesoria@tesispro.pe</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+51 (01) 748-2300</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>San Isidro Financiero, Lima - Perú</span>
+          </div>
+          <div class="footer-online-badge">
+            <span class="online-dot"></span>
+            <span>Asesores en línea</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          © 2025 TesisPro Consultoría Académica S.A.C. Todos los derechos reservados.
+        </div>
+        <div>
+          Rigurosa ética científica, confidencialidad bajo contrato y asesoría personalizada.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING CHAT BUTTON (Bottom Right)
+       ========================================================================== -->
+  <button type="button" class="floating-chat-btn" id="floating-chat-btn" aria-label="Abrir chat con asesor">
+    <i class="fa-solid fa-comment-dots"></i>
+  </button>
+
+  <!-- ==========================================================================
+       MODAL DIALOG: CONSULTA & DESCARGA
+       ========================================================================== -->
+  <div class="modal-overlay" id="consultation-modal">
+    <div class="modal-window">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div style="margin-bottom: 24px;">
+        <span class="pill-badge pill-badge--blue" style="margin-bottom: 8px;">ASESORÍA ESPECIALIZADA</span>
+        <h3 id="modal-title-text" style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; color: var(--navy-dark); margin-bottom: 6px;">
+          Agenda tu Evaluación Gratuita
+        </h3>
+        <p id="modal-sub-text" style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+          Completa tus datos y un metodólogo de TesisPro se comunicará contigo en menos de 2 horas.
+        </p>
+      </div>
+
+      <form id="modal-consultation-form">
+        <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px;">
+          <div class="form-field-group">
+            <label class="form-label" for="modal-input-name">Nombre completo</label>
+            <input type="text" id="modal-input-name" class="form-input" placeholder="Ej. Carlos Mendoza" required />
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-label" for="modal-input-phone">Número de WhatsApp (Perú)</label>
+            <input type="tel" id="modal-input-phone" class="form-input" placeholder="+51 987 654 321" required />
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-label" for="modal-input-uni">Universidad y Carrera</label>
+            <input type="text" id="modal-input-uni" class="form-input" placeholder="Ej. PUCP — Administración" required />
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-label" for="modal-input-grado">Grado Académico</label>
+            <select id="modal-input-grado" class="form-input" style="background-color: #fff;">
+              <option value="licenciatura">Pregrado / Licenciatura</option>
+              <option value="maestria">Maestría / Posgrado</option>
+              <option value="doctorado">Doctorado (Ph.D.)</option>
+              <option value="segunda">Segunda Especialidad</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+          <span>Confirmar y Enviar Solicitud</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
