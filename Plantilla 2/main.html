@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TesisPro Perú | Asesoría Académica de Posgrado y Titulación</title>
+  <title>PremiumNET | Asesoría Académica de Posgrado y Titulación</title>
   <meta name="description" content="Avanza con tu tesis sin perder más tiempo. Orientación metodológica rigurosa, revisión estadística y acompañamiento individualizado SUNEDU." />
 
   <!-- Favicon -->
@@ -49,13 +49,7 @@
             <circle cx="34" cy="27" r="1.5" fill="#34d399" />
           </svg>
         </div>
-        <div class="brand__text-group">
-          <div class="brand__title-row">
-            <span class="brand__name">Tesis<span class="brand__name--pro">Pro</span></span>
-            <span class="brand__country">Perú</span>
-          </div>
-          <span class="brand__tagline">Asesoría Académica de Posgrado y Titulación</span>
-        </div>
+        <span class="brand__name">Premium<span class="brand__name--pro">NET</span></span>
       </a>
 
       <!-- Desktop & Mobile Navigation Links -->
@@ -63,22 +57,15 @@
         <ul class="navbar__menu">
           <li><a href="#inicio" class="navbar__link is-active">Inicio</a></li>
           <li><a href="#servicios" class="navbar__link">Servicios</a></li>
-          <li><a href="#proceso" class="navbar__link">Proceso Metodológico</a></li>
-          <li><a href="#recursos" class="navbar__link">Recursos Académicos</a></li>
-          <li><a href="#testimonios" class="navbar__link">Casos de Éxito</a></li>
-          <li><a href="#diagnostico" class="navbar__link">Diagnóstico</a></li>
-          <li><a href="#agenda" class="navbar__link">Agenda en Vivo</a></li>
-          <li><a href="#blog" class="navbar__link">Blog y Guías</a></li>
-          <li><a href="#faq" class="navbar__link">FAQ</a></li>
+          <li><a href="#proceso" class="navbar__link">Proceso</a></li>
+          <li><a href="#recursos" class="navbar__link">Recursos</a></li>
+          <li><a href="#blog" class="navbar__link">Blog</a></li>
         </ul>
       </nav>
 
       <div class="navbar__actions">
         <button type="button" class="btn-primary-agenda js-open-consultation">
-          <span>Agendar evaluación gratuita</span>
-        </button>
-        <button type="button" class="navbar__profile-btn js-open-consultation" aria-label="Perfil y Sesión">
-          <i class="fa-solid fa-user"></i>
+          <span>Evaluación gratuita</span>
         </button>
         <button type="button" class="navbar__toggle" aria-label="Abrir menú">
           <i class="fa-solid fa-bars"></i>
@@ -308,31 +295,53 @@
               <h3 class="widget__title">¡Diagnóstico Calibrado con Éxito!</h3>
               <p class="widget__subtitle">Tenemos metodólogos disponibles en tu facultad para iniciar hoy:</p>
 
-              <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(52, 211, 153, 0.3); border-radius: 0.75rem; padding: 1rem; margin-bottom: 1.25rem;">
-                <div style="font-size: 0.8125rem; color: #6ee7b7; font-weight: 700; margin-bottom: 0.25rem;">
-                  <i class="fa-solid fa-circle-check"></i> Viabilidad estimada: 98.4%
+              <!-- Dynamic Calibration Summary Card -->
+              <div class="hero-widget-summary">
+                <div class="hero-widget-summary__badge">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Viabilidad estimada: 98.4%</span>
                 </div>
-                <div style="font-size: 0.75rem; color: #e2e8f0;">
-                  Se ha generado tu pre-diagnóstico con cronograma de entregas parciales y revisión Turnitin.
+                <div class="hero-widget-summary__list">
+                  <div class="hero-widget-summary__item">
+                    <span class="hero-summary-label">Grado:</span>
+                    <span class="hero-summary-val" id="hero-summary-grado">Título Profesional (Licenciatura / Ing.)</span>
+                  </div>
+                  <div class="hero-widget-summary__item">
+                    <span class="hero-summary-label">Etapa:</span>
+                    <span class="hero-summary-val" id="hero-summary-etapa">Plan / Proyecto de Tesis</span>
+                  </div>
+                  <div class="hero-widget-summary__item">
+                    <span class="hero-summary-label">Plazo:</span>
+                    <span class="hero-summary-val" id="hero-summary-plazo">1 a 3 meses</span>
+                  </div>
                 </div>
               </div>
 
-              <div style="margin-bottom: 1.25rem;">
-                <label style="font-size: 0.8125rem; color: #cbd5e1; display: block; margin-bottom: 0.35rem; font-weight: 600;">
-                  Ingresa tu número de WhatsApp para enviarte el informe:
-                </label>
-                <input type="tel" id="hero-widget-phone" placeholder="Ej: 987 654 321" style="width: 100%; padding: 0.75rem 1rem; border-radius: 0.5rem; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #fff; font-size: 0.875rem;" />
+              <div class="hero-widget-input-group">
+                <label class="hero-widget-input-label" for="hero-widget-name">Tu Nombre Completo</label>
+                <input type="text" id="hero-widget-name" placeholder="Ej: Carlos Mendoza" class="hero-widget-input" />
+              </div>
+
+              <div class="hero-widget-input-group">
+                <label class="hero-widget-input-label" for="hero-widget-phone">WhatsApp de Contacto *</label>
+                <input type="tel" id="hero-widget-phone" placeholder="Ej: 987 654 321" class="hero-widget-input" required />
               </div>
             </div>
 
-            <!-- Action Button -->
-            <button type="button" class="btn-widget-next" id="hero-widget-next-btn">
-              <span>Continuar con mi diagnóstico</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
+            <!-- Dynamic Action Controls: Prev and Next -->
+            <div class="widget__actions-row">
+              <button type="button" class="btn-widget-back" id="hero-widget-prev-btn" style="display: none;" aria-label="Paso anterior">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Atrás</span>
+              </button>
+              <button type="button" class="btn-widget-next" id="hero-widget-next-btn">
+                <span>Continuar</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
 
             <!-- WhatsApp Direct link -->
-            <a href="https://wa.me/51987654321?text=Hola%20TesisPro,%20deseo%20atenci%C3%B3n%20inmediata%20para%20mi%20tesis" target="_blank" rel="noopener noreferrer" class="widget__whatsapp-link">
+            <a href="https://wa.me/51987654321?text=Hola%20PremiumNET,%20deseo%20atenci%C3%B3n%20inmediata%20para%20mi%20tesis" target="_blank" rel="noopener noreferrer" class="widget__whatsapp-link">
               <i class="fa-brands fa-whatsapp"></i>
               <span>¿Prefieres atención inmediata? Escribir por WhatsApp</span>
             </a>
@@ -1681,8 +1690,8 @@
               </svg>
             </div>
             <div>
-              <div class="brand__tagline" style="font-size: 0.65rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">TesisPro Asesoría Académica</div>
-              <span class="footer-brand__name">Tesis<span>Pro</span> Perú</span>
+              <div class="brand__tagline" style="font-size: 0.65rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Asesoría Académica</div>
+              <span class="footer-brand__name">Premium<span>NET</span></span>
             </div>
           </div>
           <p class="footer-brand__desc">

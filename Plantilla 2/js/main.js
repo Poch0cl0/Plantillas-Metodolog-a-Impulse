@@ -85,19 +85,26 @@ function initHeroDiagnosticWidget() {
   const selections = {
     grado: 'Título Profesional (Licenciatura / Ing.)',
     etapa: 'Plan / Proyecto de Tesis',
-    plazo: '1 a 3 meses'
+    plazo: '1 a 3 meses',
+    nombre: '',
+    telefono: ''
   };
 
   const stepCountText = document.getElementById('hero-widget-step-count');
   const percentageText = document.getElementById('hero-widget-percentage');
   const progressFill = document.getElementById('hero-widget-progress-fill');
   const nextBtn = document.getElementById('hero-widget-next-btn');
+  const prevBtn = document.getElementById('hero-widget-prev-btn');
+
+  const summaryGrado = document.getElementById('hero-summary-grado');
+  const summaryEtapa = document.getElementById('hero-summary-etapa');
+  const summaryPlazo = document.getElementById('hero-summary-plazo');
 
   // Radio card selections
   const optionCards = document.querySelectorAll('.hero-widget-option');
   optionCards.forEach((card) => {
     card.addEventListener('click', function () {
-      const parentPane = this.closest('.widget-step-pane');
+      const parentPane = this.closest('.hero-widget-step-pane, .widget-step-pane');
       if (!parentPane) return;
 
       parentPane.querySelectorAll('.hero-widget-option').forEach((c) => {
@@ -115,7 +122,23 @@ function initHeroDiagnosticWidget() {
       if (key && val) {
         selections[key] = val;
       }
+
+      // Smooth auto advance to next step for dynamic wizard feel
+      if (currentStep < totalSteps) {
+        setTimeout(() => {
+          currentStep++;
+          updateWidgetView();
+        }, 220);
+      }
     });
+  });
+
+  // Prev Step Action
+  prevBtn?.addEventListener('click', () => {
+    if (currentStep > 1) {
+      currentStep--;
+      updateWidgetView();
+    }
   });
 
   // Next Step Action
@@ -124,19 +147,31 @@ function initHeroDiagnosticWidget() {
       currentStep++;
       updateWidgetView();
     } else {
-      // Step 4 final action: connect directly or launch modal
-      const phone = document.getElementById('hero-widget-phone')?.value || '';
-      const message = `¡Hola TesisPro! Completé el diagnóstico rápido en la web:%0A- Grado: ${encodeURIComponent(selections.grado)}%0A- Etapa: ${encodeURIComponent(selections.etapa)}%0A- Plazo: ${encodeURIComponent(selections.plazo)}${phone ? `%0A- Contacto: ${encodeURIComponent(phone)}` : ''}%0ADeseo agendar mi evaluación gratuita.`;
+      // Step 4 final action: connect directly via WhatsApp
+      const name = document.getElementById('hero-widget-name')?.value?.trim() || '';
+      const phone = document.getElementById('hero-widget-phone')?.value?.trim() || '';
+
+      if (!phone && !name) {
+        showToast('Por favor ingresa tu número de WhatsApp para enviarte el diagnóstico.');
+        document.getElementById('hero-widget-phone')?.focus();
+        return;
+      }
+
+      selections.nombre = name;
+      selections.telefono = phone;
+
+      const message = `¡Hola PremiumNET! Completé el diagnóstico rápido en la web:%0A- Nombre: ${encodeURIComponent(name || 'Tesista')}%0A- Grado: ${encodeURIComponent(selections.grado)}%0A- Etapa: ${encodeURIComponent(selections.etapa)}%0A- Plazo: ${encodeURIComponent(selections.plazo)}${phone ? `%0A- Contacto: ${encodeURIComponent(phone)}` : ''}%0ADeseo agendar mi evaluación gratuita.`;
+
       showToast('¡Diagnóstico completado! Redirigiendo a tu asesor asignado...');
       setTimeout(() => {
         window.open(`https://wa.me/51987654321?text=${message}`, '_blank');
-      }, 1000);
+      }, 900);
     }
   });
 
   function updateWidgetView() {
     // Hide all panes
-    document.querySelectorAll('.hero-widget-step-pane').forEach((pane) => {
+    document.querySelectorAll('.hero-widget-step-pane, .widget-step-pane').forEach((pane) => {
       pane.classList.remove('is-active');
     });
 
@@ -150,14 +185,24 @@ function initHeroDiagnosticWidget() {
     if (percentageText) percentageText.textContent = `${pct}% completado`;
     if (progressFill) progressFill.style.width = `${pct}%`;
 
-    // Button label
+    // Update Prev button visibility
+    if (prevBtn) {
+      prevBtn.style.display = currentStep > 1 ? 'inline-flex' : 'none';
+    }
+
+    // Button label and icon
     if (nextBtn) {
       if (currentStep === totalSteps) {
-        nextBtn.innerHTML = 'Iniciar por WhatsApp con mi diagnóstico <i class="fa-brands fa-whatsapp"></i>';
+        nextBtn.innerHTML = '<span>Enviar por WhatsApp</span> <i class="fa-brands fa-whatsapp"></i>';
       } else {
-        nextBtn.innerHTML = 'Continuar con mi diagnóstico <i class="fa-solid fa-arrow-right"></i>';
+        nextBtn.innerHTML = '<span>Continuar</span> <i class="fa-solid fa-arrow-right"></i>';
       }
     }
+
+    // Update summary values on step 4
+    if (summaryGrado) summaryGrado.textContent = selections.grado;
+    if (summaryEtapa) summaryEtapa.textContent = selections.etapa;
+    if (summaryPlazo) summaryPlazo.textContent = selections.plazo;
   }
 }
 

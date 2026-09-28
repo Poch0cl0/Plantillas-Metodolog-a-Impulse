@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TesisPro Perú | Asesoría Académica de Posgrado y Titulación</title>
+  <title>PremiumNET | Asesoría Académica de Posgrado y Titulación</title>
   <meta name="description" content="Avanza con tu tesis sin perder más tiempo. Orientación metodológica rigurosa, revisión estadística y acompañamiento individualizado SUNEDU." />
 
   <!-- Favicon -->
@@ -49,13 +49,7 @@
             <circle cx="34" cy="27" r="1.5" fill="#34d399" />
           </svg>
         </div>
-        <div class="brand__text-group">
-          <div class="brand__title-row">
-            <span class="brand__name">Tesis<span class="brand__name--pro">Pro</span></span>
-            <span class="brand__country">Perú</span>
-          </div>
-          <span class="brand__tagline">Asesoría Académica de Posgrado y Titulación</span>
-        </div>
+        <span class="brand__name">Premium<span class="brand__name--pro">NET</span></span>
       </a>
 
       <!-- Desktop & Mobile Navigation Links -->
@@ -63,22 +57,15 @@
         <ul class="navbar__menu">
           <li><a href="#inicio" class="navbar__link is-active">Inicio</a></li>
           <li><a href="#servicios" class="navbar__link">Servicios</a></li>
-          <li><a href="#proceso" class="navbar__link">Proceso Metodológico</a></li>
-          <li><a href="#recursos" class="navbar__link">Recursos Académicos</a></li>
-          <li><a href="#testimonios" class="navbar__link">Casos de Éxito</a></li>
-          <li><a href="#diagnostico" class="navbar__link">Diagnóstico</a></li>
-          <li><a href="#agenda" class="navbar__link">Agenda en Vivo</a></li>
-          <li><a href="#blog" class="navbar__link">Blog y Guías</a></li>
-          <li><a href="#faq" class="navbar__link">FAQ</a></li>
+          <li><a href="#proceso" class="navbar__link">Proceso</a></li>
+          <li><a href="#recursos" class="navbar__link">Recursos</a></li>
+          <li><a href="#blog" class="navbar__link">Blog</a></li>
         </ul>
       </nav>
 
       <div class="navbar__actions">
         <button type="button" class="btn-primary-agenda js-open-consultation">
-          <span>Agendar evaluación gratuita</span>
-        </button>
-        <button type="button" class="navbar__profile-btn js-open-consultation" aria-label="Perfil y Sesión">
-          <i class="fa-solid fa-user"></i>
+          <span>Evaluación gratuita</span>
         </button>
         <button type="button" class="navbar__toggle" aria-label="Abrir menú">
           <i class="fa-solid fa-bars"></i>
@@ -97,11 +84,6 @@
 
         <!-- Hero Left Column -->
         <div class="hero__content">
-          <div class="hero__eyebrow">
-            <span class="section-eyebrow section-eyebrow--pill">
-              ASESORÍA ACADÉMICA ESPECIALIZADA EN PERÚ · SUNEDU / UNIVERSIDADES
-            </span>
-          </div>
 
           <h1 class="hero__title">
             Avanza con tu tesis <span class="hero__highlight">sin perder más tiempo</span>
@@ -140,26 +122,6 @@
             </span>
           </div>
 
-          <!-- Social Proof Rating -->
-          <div class="hero__social-proof">
-            <div class="avatar-stack">
-              <img src="images/testimonio-1.png" alt="Tesista graduada" class="avatar-stack__img" />
-              <img src="images/testimonio-2.png" alt="Tesista graduado" class="avatar-stack__img" />
-              <img src="images/testimonio-3.png" alt="Tesista sustentada" class="avatar-stack__img" />
-              <div class="avatar-stack__more">+850</div>
-            </div>
-            <div class="social-rating">
-              <div class="social-rating__stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span class="social-rating__score">4.9/5</span>
-              </div>
-              <div class="social-rating__text">Calificación de jurados de grado en Perú</div>
-            </div>
-          </div>
         </div>
 
         <!-- Hero Right Column: Interactive Quick Diagnostic Card -->
@@ -308,31 +270,53 @@
               <h3 class="widget__title">¡Diagnóstico Calibrado con Éxito!</h3>
               <p class="widget__subtitle">Tenemos metodólogos disponibles en tu facultad para iniciar hoy:</p>
 
-              <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(52, 211, 153, 0.3); border-radius: 0.75rem; padding: 1rem; margin-bottom: 1.25rem;">
-                <div style="font-size: 0.8125rem; color: #6ee7b7; font-weight: 700; margin-bottom: 0.25rem;">
-                  <i class="fa-solid fa-circle-check"></i> Viabilidad estimada: 98.4%
+              <!-- Dynamic Calibration Summary Card -->
+              <div class="hero-widget-summary">
+                <div class="hero-widget-summary__badge">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Viabilidad estimada: 98.4%</span>
                 </div>
-                <div style="font-size: 0.75rem; color: #e2e8f0;">
-                  Se ha generado tu pre-diagnóstico con cronograma de entregas parciales y revisión Turnitin.
+                <div class="hero-widget-summary__list">
+                  <div class="hero-widget-summary__item">
+                    <span class="hero-summary-label">Grado:</span>
+                    <span class="hero-summary-val" id="hero-summary-grado">Título Profesional (Licenciatura / Ing.)</span>
+                  </div>
+                  <div class="hero-widget-summary__item">
+                    <span class="hero-summary-label">Etapa:</span>
+                    <span class="hero-summary-val" id="hero-summary-etapa">Plan / Proyecto de Tesis</span>
+                  </div>
+                  <div class="hero-widget-summary__item">
+                    <span class="hero-summary-label">Plazo:</span>
+                    <span class="hero-summary-val" id="hero-summary-plazo">1 a 3 meses</span>
+                  </div>
                 </div>
               </div>
 
-              <div style="margin-bottom: 1.25rem;">
-                <label style="font-size: 0.8125rem; color: #cbd5e1; display: block; margin-bottom: 0.35rem; font-weight: 600;">
-                  Ingresa tu número de WhatsApp para enviarte el informe:
-                </label>
-                <input type="tel" id="hero-widget-phone" placeholder="Ej: 987 654 321" style="width: 100%; padding: 0.75rem 1rem; border-radius: 0.5rem; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #fff; font-size: 0.875rem;" />
+              <div class="hero-widget-input-group">
+                <label class="hero-widget-input-label" for="hero-widget-name">Tu Nombre Completo</label>
+                <input type="text" id="hero-widget-name" placeholder="Ej: Carlos Mendoza" class="hero-widget-input" />
+              </div>
+
+              <div class="hero-widget-input-group">
+                <label class="hero-widget-input-label" for="hero-widget-phone">WhatsApp de Contacto *</label>
+                <input type="tel" id="hero-widget-phone" placeholder="Ej: 987 654 321" class="hero-widget-input" required />
               </div>
             </div>
 
-            <!-- Action Button -->
-            <button type="button" class="btn-widget-next" id="hero-widget-next-btn">
-              <span>Continuar con mi diagnóstico</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
+            <!-- Dynamic Action Controls: Prev and Next -->
+            <div class="widget__actions-row">
+              <button type="button" class="btn-widget-back" id="hero-widget-prev-btn" style="display: none;" aria-label="Paso anterior">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Atrás</span>
+              </button>
+              <button type="button" class="btn-widget-next" id="hero-widget-next-btn">
+                <span>Continuar</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
 
             <!-- WhatsApp Direct link -->
-            <a href="https://wa.me/51987654321?text=Hola%20TesisPro,%20deseo%20atenci%C3%B3n%20inmediata%20para%20mi%20tesis" target="_blank" rel="noopener noreferrer" class="widget__whatsapp-link">
+            <a href="https://wa.me/51987654321?text=Hola%20PremiumNET,%20deseo%20atenci%C3%B3n%20inmediata%20para%20mi%20tesis" target="_blank" rel="noopener noreferrer" class="widget__whatsapp-link">
               <i class="fa-brands fa-whatsapp"></i>
               <span>¿Prefieres atención inmediata? Escribir por WhatsApp</span>
             </a>
@@ -350,47 +334,43 @@
         <div class="stats-grid">
 
           <!-- Card 1 -->
-          <div class="stat-card">
-            <div class="stat-card__top">
+          <div class="stat-card stat-card--minimal">
+            <div class="stat-card__icon-wrap">
               <i class="fa-solid fa-user-group stat-card__icon"></i>
-              <span class="stat-badge stat-badge--verified">Verificado</span>
             </div>
             <div class="stat-card__number js-counter" data-target="850" data-prefix="+">+850</div>
             <div class="stat-card__title">Tesistas Asesorados</div>
-            <div class="stat-card__subtitle">Sujeto a verificación periódica</div>
+            <div class="stat-card__subtitle">Hemos acompañado a cientos de profesionales a lograr su título con éxito.</div>
           </div>
 
           <!-- Card 2 -->
-          <div class="stat-card">
-            <div class="stat-card__top">
+          <div class="stat-card stat-card--minimal">
+            <div class="stat-card__icon-wrap">
               <i class="fa-solid fa-diagram-project stat-card__icon"></i>
-              <span class="stat-badge stat-badge--cyan">Multi-área</span>
             </div>
             <div class="stat-card__number js-counter" data-target="120" data-prefix="+">+120</div>
             <div class="stat-card__title">Facultades y Carreras</div>
-            <div class="stat-card__subtitle">Ingenierías, Salud y Letras</div>
+            <div class="stat-card__subtitle">Experiencia multisectorial en Ingenierías, Ciencias de la Salud y Letras.</div>
           </div>
 
           <!-- Card 3 -->
-          <div class="stat-card">
-            <div class="stat-card__top">
+          <div class="stat-card stat-card--minimal">
+            <div class="stat-card__icon-wrap">
               <i class="fa-solid fa-trophy stat-card__icon"></i>
-              <span class="stat-badge stat-badge--verified">Auditoría 2024</span>
             </div>
             <div class="stat-card__number js-counter" data-target="98.4" data-suffix="%">98.4%</div>
             <div class="stat-card__title">Tasa de Aprobación</div>
-            <div class="stat-card__subtitle">En primeras sustentaciones</div>
+            <div class="stat-card__subtitle">Alta efectividad en primeras sustentaciones gracias a auditorías rigurosas.</div>
           </div>
 
           <!-- Card 4 -->
-          <div class="stat-card">
-            <div class="stat-card__top">
+          <div class="stat-card stat-card--minimal">
+            <div class="stat-card__icon-wrap">
               <i class="fa-solid fa-certificate stat-card__icon"></i>
-              <span class="stat-badge stat-badge--indigo">Trayectoria</span>
             </div>
             <div class="stat-card__number js-counter" data-target="8" data-prefix="+" data-suffix=" Años">+8 Años</div>
             <div class="stat-card__title">Experiencia en Perú</div>
-            <div class="stat-card__subtitle">Conforme a Ley Universitaria 30220</div>
+            <div class="stat-card__subtitle">Trayectoria metodológica alineada a la Ley Universitaria 30220 de SUNEDU.</div>
           </div>
 
         </div>
@@ -405,15 +385,64 @@
         <div class="universities-strip__heading">
           ESTRUCTURACIÓN METODOLÓGICA ALINEADA A REGLAMENTOS DE GRADOS Y TÍTULOS DE LAS PRINCIPALES UNIVERSIDADES PERUANAS
         </div>
-        <div class="universities-strip__pills">
-          <span class="uni-pill"><span class="uni-pill__dot"></span> UNMSM (San Marcos)</span>
-          <span class="uni-pill"><span class="uni-pill__dot"></span> Pontificia Univ. Católica (PUCP)</span>
-          <span class="uni-pill"><span class="uni-pill__dot"></span> Univ. Nacional de Ingeniería (UNI)</span>
-          <span class="uni-pill"><span class="uni-pill__dot"></span> Univ. de Lima (ULima)</span>
-          <span class="uni-pill"><span class="uni-pill__dot"></span> Univ. del Pacífico (UP)</span>
-          <span class="uni-pill"><span class="uni-pill__dot"></span> UPC & USIL</span>
-          <span class="uni-pill"><span class="uni-pill__dot"></span> USMP, UCSUR & UCV</span>
-          <span class="uni-pill uni-pill--highlight">+ 40 universidades licenciadas</span>
+      </div>
+      
+      <!-- Scrolling Marquee -->
+      <div class="universities-marquee">
+        <div class="universities-marquee__track">
+          <!-- Duplicated for infinite scroll effect -->
+          <div class="universities-marquee__content">
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UNMSM</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> PUCP</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UNI</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> ULima</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UP</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UPC</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> USIL</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> USMP</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UCSUR</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UCV</div>
+          </div>
+          <div class="universities-marquee__content" aria-hidden="true">
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UNMSM</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> PUCP</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UNI</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> ULima</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UP</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UPC</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> USIL</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> USMP</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UCSUR</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UCV</div>
+          </div>
+        </div>
+        
+        <!-- Second Line (Reverse) -->
+        <div class="universities-marquee__track universities-marquee__track--reverse">
+          <div class="universities-marquee__content">
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UPN</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> USanPedro</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UTEC</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UCSS</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UPCH</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> URP</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UNSA</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UPAO</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UDEP</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> USAT</div>
+          </div>
+          <div class="universities-marquee__content" aria-hidden="true">
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UPN</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> USanPedro</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UTEC</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UCSS</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UPCH</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> URP</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UNSA</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UPAO</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> UDEP</div>
+            <div class="uni-logo-card"><i class="fa-solid fa-building-columns"></i> USAT</div>
+          </div>
         </div>
       </div>
     </div>
@@ -422,98 +451,80 @@
          SECTION: OBSTACLES & PROBLEMS (Image 2)
          ========================================================================== -->
     <section class="section obstacles-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-eyebrow section-eyebrow--pill section-eyebrow--peach">
-            Diagnóstico de Obstáculos Frecuentes
-          </span>
-          <h2 class="section-title">¿Tu tesis se encuentra estancada?</h2>
-          <p class="section-subtitle">
-            Identificamos con precisión las 4 trabas metodológicas que retrasan tu titulación o graduación:
+      <div class="container obstacles-container">
+        
+        <!-- Left Side: 2x2 Grid of image cards -->
+        <div class="obstacles-left">
+          <div class="obstacles-grid-2x2">
+            <!-- Card 1 -->
+            <div class="obstacle-img-card">
+              <div class="obstacle-img-card__img-wrap">
+                <span class="obstacle-img-card__tag">01</span>
+                <img src="images/obs-1.jpg" alt="No saber por dónde empezar">
+              </div>
+              <div class="obstacle-img-card__content">
+                <h3 class="obstacle-img-card__title">No saber por dónde empezar</h3>
+                <span class="obstacle-img-card__link">Saber más <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="obstacle-img-card">
+              <div class="obstacle-img-card__img-wrap">
+                <span class="obstacle-img-card__tag">02</span>
+                <img src="images/obs-2.jpg" alt="Observaciones reiteradas">
+              </div>
+              <div class="obstacle-img-card__content">
+                <h3 class="obstacle-img-card__title">Observaciones reiteradas</h3>
+                <span class="obstacle-img-card__link">Saber más <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="obstacle-img-card">
+              <div class="obstacle-img-card__img-wrap">
+                <span class="obstacle-img-card__tag">03</span>
+                <img src="images/obs-3.jpg" alt="Falta de tiempo laboral">
+              </div>
+              <div class="obstacle-img-card__content">
+                <h3 class="obstacle-img-card__title">Falta de tiempo laboral</h3>
+                <span class="obstacle-img-card__link">Saber más <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="obstacle-img-card">
+              <div class="obstacle-img-card__img-wrap">
+                <span class="obstacle-img-card__tag">04</span>
+                <img src="images/obs-4.jpg" alt="Inseguridad ante la réplica">
+              </div>
+              <div class="obstacle-img-card__content">
+                <h3 class="obstacle-img-card__title">Inseguridad ante la réplica</h3>
+                <span class="obstacle-img-card__link">Saber más <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: CTA & Info -->
+        <div class="obstacles-right">
+          <h2 class="section-title section-title--left">¿Tu tesis se encuentra estancada?</h2>
+          <p class="section-subtitle section-subtitle--left">
+            Identificamos con precisión las trabas metodológicas que retrasan tu titulación o graduación.
           </p>
-        </div>
-
-        <div class="obstacles-grid">
-          <!-- Obstacle 1 -->
-          <div class="obstacle-card">
-            <div>
-              <div class="obstacle-card__icon-box">
-                <i class="fa-solid fa-eye-slash"></i>
-              </div>
-              <h3 class="obstacle-card__title">1. No saber por dónde empezar</h3>
-              <p class="obstacle-card__body">
-                Bloqueo crítico al delimitar el problema de investigación, formular objetivos con taxonomía adecuada o justificar la viabilidad teórica de la muestra.
-              </p>
+          
+          <div class="obstacles-cta-box">
+            <div class="obstacles-cta-box__icon">
+              <i class="fa-solid fa-chart-line"></i>
             </div>
-            <div class="obstacle-card__solution">
-              <span>Solución: Matriz de consistencia inicial</span>
-            </div>
+            <p>Implementamos un <strong>proceso estructurado y comprobado</strong> diseñado para profesionales sin tiempo.</p>
+            <p>Con nuestra asesoría avanzarás de forma segura en cada capítulo, optimizando tus horarios y con la tranquilidad de contar con expertos de PremiumNET apoyándote.</p>
+            
+            <a href="#diagnostico" class="btn-primary-agenda js-open-consultation">
+              <span>Superar mi obstáculo</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
-
-          <!-- Obstacle 2 -->
-          <div class="obstacle-card">
-            <div>
-              <div class="obstacle-card__icon-box">
-                <i class="fa-solid fa-pen-to-square"></i>
-              </div>
-              <h3 class="obstacle-card__title">2. Observaciones reiteradas</h3>
-              <p class="obstacle-card__body">
-                Correcciones reiterativas del asesor o jurado sobre el marco teórico, el diseño metodológico o incongruencias en pruebas estadísticas (SPSS, R).
-              </p>
-            </div>
-            <div class="obstacle-card__solution">
-              <span>Solución: Levantamiento punto por punto</span>
-            </div>
-          </div>
-
-          <!-- Obstacle 3 -->
-          <div class="obstacle-card">
-            <div>
-              <div class="obstacle-card__icon-box">
-                <i class="fa-solid fa-business-time"></i>
-              </div>
-              <h3 class="obstacle-card__title">3. Falta de tiempo laboral</h3>
-              <p class="obstacle-card__body">
-                Cargas de trabajo exhaustivas y responsabilidades familiares que reducen tus horas disponibles a fragmentos insuficientes para avanzar solo.
-              </p>
-            </div>
-            <div class="obstacle-card__solution">
-              <span>Solución: Cronograma modular por hitos</span>
-            </div>
-          </div>
-
-          <!-- Obstacle 4 -->
-          <div class="obstacle-card">
-            <div>
-              <div class="obstacle-card__icon-box">
-                <i class="fa-solid fa-user-tie"></i>
-              </div>
-              <h3 class="obstacle-card__title">4. Inseguridad ante la réplica</h3>
-              <p class="obstacle-card__body">
-                Temor al momento de defender los resultados, sintetizar 120 páginas en 20 diapositivas y afrontar las preguntas complejas del jurado calificador.
-              </p>
-            </div>
-            <div class="obstacle-card__solution">
-              <span>Solución: Simulacros de sustentación</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Banner Bar Below Obstacles -->
-        <div class="methodology-banner">
-          <div class="methodology-banner__content">
-            <div class="methodology-banner__icon">
-              <i class="fa-solid fa-lightbulb"></i>
-            </div>
-            <div class="methodology-banner__text">
-              <strong>No tienes por qué hacerlo solo</strong>
-              <span>Hay una metodología probada paso a paso diseñada para desbloquear tu investigación sin estrés.</span>
-            </div>
-          </div>
-          <a href="#proceso" class="btn-methodology-step">
-            <span>Ver metodología paso a paso</span>
-            <i class="fa-solid fa-arrow-down"></i>
-          </a>
         </div>
 
       </div>
@@ -1681,8 +1692,8 @@
               </svg>
             </div>
             <div>
-              <div class="brand__tagline" style="font-size: 0.65rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">TesisPro Asesoría Académica</div>
-              <span class="footer-brand__name">Tesis<span>Pro</span> Perú</span>
+              <div class="brand__tagline" style="font-size: 0.65rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Asesoría Académica</div>
+              <span class="footer-brand__name">Premium<span>NET</span></span>
             </div>
           </div>
           <p class="footer-brand__desc">
