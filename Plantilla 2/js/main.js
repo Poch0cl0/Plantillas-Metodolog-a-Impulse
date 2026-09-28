@@ -352,10 +352,8 @@ function initDiagnosticWizard() {
    4. Modals (Consultation, Video, Resource Unlock)
    ========================================================================== */
 function initModals() {
-  // Consultation Modal Triggers
-  const openConsultationBtns = document.querySelectorAll(
-    '.js-open-consultation, .btn-primary-agenda, .top-banner__cta, .btn-hero-primary, .btn-modality-primary, .btn-service-primary'
-  );
+  // Consultation Modal Triggers (now redirect to evaluacion.html, removing interceptors)
+  const openConsultationBtns = document.querySelectorAll('.js-open-consultation-modal'); // Assuming we use a specific class if any modal is still needed
   const consultationModal = document.getElementById('consultation-modal');
 
   openConsultationBtns.forEach((btn) => {

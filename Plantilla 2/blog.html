@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PremiumNET | Asesoría Académica de Posgrado y Titulación</title>
+  <meta name="description" content="Avanza con tu tesis sin perder más tiempo. Orientación metodológica rigurosa, revisión estadística y acompañamiento individualizado SUNEDU." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%23047857'/><path d='M20 10L6 17.5L20 25L34 17.5L20 10Z' fill='%23ffffff'/><path d='M11 20.5V26.5C11 28.5 15 30.5 20 30.5C25 30.5 29 28.5 29 26.5V20.5' stroke='%23ffffff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP ANNOUNCEMENT BANNER
+       ========================================================================== -->
+  <div class="top-banner">
+    <div class="container top-banner__content">
+      <div class="top-banner__text">
+        <i class="fa-solid fa-sparkles top-banner__icon"></i>
+        <span>Obtén una evaluación gratuita de tu tesis. Cupos disponibles esta semana en Lima y provincias.</span>
+      </div>
+      <a href="evaluacion.html" class="top-banner__cta">Reservar mi evaluación</a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       NAVBAR
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container navbar__container">
+      <a href="#inicio" class="navbar__brand">
+        <div class="brand__logo-box">
+          <svg viewBox="0 0 40 40" fill="none" class="brand__icon">
+            <path d="M20 10L6 17.5L20 25L34 17.5L20 10Z" fill="#ffffff" />
+            <path d="M11 20.5V26.5C11 28.5 15 30.5 20 30.5C25 30.5 29 28.5 29 26.5V20.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M34 18V26" stroke="#34d399" stroke-width="2.2" stroke-linecap="round" />
+            <circle cx="34" cy="27" r="1.5" fill="#34d399" />
+          </svg>
+        </div>
+        <span class="brand__name">Premium<span class="brand__name--pro">NET</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav>
+        <ul class="navbar__menu">
+          <li><a href="#inicio" class="navbar__link is-active">Inicio</a></li>
+          <li><a href="#servicios" class="navbar__link">Servicios</a></li>
+          <li><a href="#proceso" class="navbar__link">Proceso</a></li>
+          <li><a href="#recursos" class="navbar__link">Recursos</a></li>
+          <li><a href="blog.html" class="navbar__link">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="evaluacion.html" class="btn-primary-agenda">
+          <span>Evaluación gratuita</span>
+        </a>
+        <button type="button" class="navbar__toggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+<!-- ==========================================================================
+         SECTION: ARTÍCULOS Y METODOLOGÍA / PUBLICACIONES RECIENTES
+         ========================================================================== -->
+    <section class="section blog-section" id="blog">
+      <div class="container">
+        <div class="blog-header-row">
+          <div>
+            <span class="section-eyebrow">ARTÍCULOS Y METODOLOGÍA</span>
+            <h2 class="section-title" style="margin-bottom: 0;">Publicaciones Recientes para Investigadores</h2>
+          </div>
+          <a href="blog.html" class="blog-view-all-link js-open-article" data-id="1">
+            <span>Ver todos los artículos en el blog</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="blog-grid">
+
+          <!-- Blog Card 1 -->
+          <article class="blog-card">
+            <div class="blog-thumbnail-wrapper">
+              <img src="images/servicio-asesoria.png" alt="Formulación de pregunta de investigación" class="blog-thumbnail-img" />
+              <span class="blog-category-badge">Metodología</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta-info">5 min de lectura · Normas SUNEDU</div>
+              <h3 class="blog-card-title">Las 5 claves para formular una pregunta de investigación sin inconsistencias</h3>
+              <p class="blog-card-snippet">
+                Aprende a evitar preguntas bicéfalas o de respuesta cerrada si/no que el jurado suele observar de inmediato.
+              </p>
+              <a href="blog.html" class="blog-read-more-link js-open-article" data-id="1">
+                <span>Leer artículo completo</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Blog Card 2 -->
+          <article class="blog-card">
+            <div class="blog-thumbnail-wrapper">
+              <img src="images/servicio-redaccion.png" alt="Marco teórico según normas APA 7" class="blog-thumbnail-img" />
+              <span class="blog-category-badge">Normas APA 7</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta-info">7 min de lectura · Citas & Turnitin</div>
+              <h3 class="blog-card-title">Cómo estructurar el marco teórico según APA 7 sin elevar el porcentaje de plagio</h3>
+              <p class="blog-card-snippet">
+                Técnicas de parafraseo crítico y síntesis bibliográfica para mantener tu similitud por debajo del 12% reglamentario.
+              </p>
+              <a href="blog.html" class="blog-read-more-link js-open-article" data-id="2">
+                <span>Leer artículo completo</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Blog Card 3 -->
+          <article class="blog-card">
+            <div class="blog-thumbnail-wrapper">
+              <img src="images/servicio-sustentacion.png" alt="Oratoria para sustentación de tesis" class="blog-thumbnail-img" />
+              <span class="blog-category-badge">Sustentación</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta-info">6 min de lectura · Oratoria y Jurado</div>
+              <h3 class="blog-card-title">Estrategias de oratoria para responder las preguntas difíciles del jurado</h3>
+              <p class="blog-card-snippet">
+                Cómo mantener la serenidad ante objeciones metodológicas y argumentar con los límites declarados de tu estudio.
+              </p>
+              <a href="blog.html" class="blog-read-more-link js-open-article" data-id="3">
+                <span>Leer artículo completo</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+</main>
+
+  <!-- ==========================================================================
+       UPDATED FOOTER (Image 2)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand Info -->
+        <div>
+          <div class="footer-brand__logo">
+            <div class="brand__logo-box">
+              <svg viewBox="0 0 40 40" fill="none" class="brand__icon">
+                <path d="M20 10L6 17.5L20 25L34 17.5L20 10Z" fill="#ffffff" />
+                <path d="M11 20.5V26.5C11 28.5 15 30.5 20 30.5C25 30.5 29 28.5 29 26.5V20.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M34 18V26" stroke="#34d399" stroke-width="2.2" stroke-linecap="round" />
+                <circle cx="34" cy="27" r="1.5" fill="#34d399" />
+              </svg>
+            </div>
+            <div>
+              <div class="brand__tagline" style="font-size: 0.65rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">Asesoría Académica</div>
+              <span class="footer-brand__name">Premium<span>NET</span></span>
+            </div>
+          </div>
+          <p class="footer-brand__desc">
+            Plataforma líder en acompañamiento metodológico y estadístico riguroso para tesis de pregrado, posgrado y sustentación en universidades peruanas e internacionales.
+          </p>
+          <div style="display: flex; align-items: center; gap: 0.5rem; color: #34d399; font-size: 0.75rem; font-weight: 600;">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Acompañamiento conforme a normativas SUNEDU y estándares Concytec.</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Servicios Académicos -->
+        <div>
+          <h4 class="footer-col__title">Servicios Académicos</h4>
+          <ul class="footer-links-list">
+            <li><a href="#servicios">Tesis de Bachiller</a></li>
+            <li><a href="#servicios">Tesis para Título Profesional</a></li>
+            <li><a href="#servicios">Tesis de Maestría</a></li>
+            <li><a href="#servicios">Tesis de Doctorado</a></li>
+            <li><a href="#servicios">Análisis Estadístico (SPSS / R)</a></li>
+            <li><a href="#servicios">Revisión de Turnitin & Antiplagio</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Recursos Gratuitos -->
+        <div>
+          <h4 class="footer-col__title">Recursos Gratuitos</h4>
+          <ul class="footer-links-list">
+            <li><a href="#recursos">Plantilla Matriz de Consistencia</a></li>
+            <li><a href="#recursos">Guía de Normas APA 7ma Edición</a></li>
+            <li><a href="#recursos">Manual Estilo Vancouver & IEEE</a></li>
+            <li><a href="#proceso">Simulador de Jurado de Tesis</a></li>
+            <li><a href="#recursos">Repositorios Científicos Scopus</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contacto & Sedes -->
+        <div>
+          <h4 class="footer-col__title">Contacto & Sedes</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>San Isidro, Lima - Perú</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-regular fa-envelope"></i>
+            <span>soporte@tesispro.pe</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>+51 987 654 321</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-regular fa-clock"></i>
+            <span>Lun - Sáb: 8:00 AM - 8:00 PM</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          © 2024 TesisPro Perú E.I.R.L. RUC 20608945123. Todos los derechos reservados.
+        </div>
+        <div class="footer-bottom__links">
+          <a href="#">Políticas de Privacidad</a>
+          <a href="#">Términos y Condiciones</a>
+          <a href="#">Tratamiento de Datos Personales (Ley 29733)</a>
+          <a href="#">Libro de Reclamaciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING WHATSAPP BUTTON WITH PROMPT PILL (Image 2)
+       ========================================================================== -->
+  <div class="whatsapp-floating">
+    <div class="whatsapp-chat-prompt">
+      <span class="pulse-dot"></span>
+      <span>¿Consultas sobre tu tesis? Chatea con un asesor</span>
+    </div>
+    <a href="https://wa.me/51987654321?text=Hola%20TesisPro,%20deseo%20orientaci%C3%B3n%20metodol%C3%B3gica%20gratuita%20para%20mi%20tesis" target="_blank" rel="noopener noreferrer" class="whatsapp-floating__button" aria-label="Contactar por WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- ==========================================================================
+       MODALS: CONSULTATION, VIDEO TESTIMONIAL, RESOURCE UNLOCK
+       ========================================================================== -->
+
+  <!-- Modal 1: Agendar Evaluación Gratuita -->
+  <div class="modal-overlay" id="consultation-modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">Agendar Evaluación Gratuita de Tesis</h3>
+        <button type="button" class="modal-close-btn" aria-label="Cerrar">&times;</button>
+      </div>
+      <form id="consultation-form">
+        <div class="modal-body">
+          <p style="font-size: 0.875rem; color: var(--slate-600); margin-bottom: 1.25rem;">
+            Uno de nuestros metodólogos revisará tu caso de manera 100% confidencial durante 30 minutos sin costo.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+            <div>
+              <label style="font-size: 0.8125rem; font-weight: 600; display: block; margin-bottom: 0.25rem;">Nombres y Apellidos *</label>
+              <input type="text" class="wizard-input" style="width: 100%;" placeholder="Tu nombre completo" required />
+            </div>
+
+            <div>
+              <label style="font-size: 0.8125rem; font-weight: 600; display: block; margin-bottom: 0.25rem;">Número de WhatsApp *</label>
+              <input type="tel" class="wizard-input" style="width: 100%;" placeholder="Ej: 987 654 321" required />
+            </div>
+
+            <div>
+              <label style="font-size: 0.8125rem; font-weight: 600; display: block; margin-bottom: 0.25rem;">Universidad & Carrera</label>
+              <input type="text" class="wizard-input" style="width: 100%;" placeholder="Ej: San Marcos / Derecho" />
+            </div>
+
+            <div>
+              <label style="font-size: 0.8125rem; font-weight: 600; display: block; margin-bottom: 0.25rem;">¿Cuál es tu principal dificultad?</label>
+              <select class="wizard-select" style="width: 100%;">
+                <option value="tema">Delimitación del tema o problema</option>
+                <option value="observaciones">Observaciones reiteradas del asesor/jurado</option>
+                <option value="estadistica">Análisis estadístico o validación de instrumentos</option>
+                <option value="tiempo">Falta de tiempo laboral para redactar</option>
+                <option value="sustentacion">Preparación de simulacro de sustentación</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-wizard-back modal-close-btn">Cancelar</button>
+          <a href="evaluacion.html" class="btn-wizard-next">Confirmar mi evaluación gratis</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 2: Video Player Testimonial -->
+  <div class="modal-overlay" id="video-modal">
+    <div class="modal-dialog modal-dialog--wide">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="video-modal-author">Entrevista con el Graduado</h3>
+          <div style="font-size: 0.75rem; color: var(--primary-700); font-weight: 600;" id="video-modal-role">Magíster / Licenciado</div>
+        </div>
+        <button type="button" class="modal-close-btn" aria-label="Cerrar">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="simulated-video-player">
+          <img src="images/como-trabajamos-asesoria.jpg" alt="Video preview" />
+          <div class="simulated-play-button">
+            <i class="fa-solid fa-play"></i>
+          </div>
+        </div>
+        <div style="font-size: 0.875rem; color: var(--slate-700); line-height: 1.6;">
+          <p><strong>Síntesis del Caso:</strong> El tesista expone cómo logró superar las observaciones más difíciles del jurado metodológico y reducir su tiempo de sustentación a menos de 4 semanas con acompañamiento guiado.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://wa.me/51987654321?text=Hola%20TesisPro,%20vi%20los%20casos%20de%20%C3%A9xito%20y%20deseo%20informaci%C3%B3n" target="_blank" rel="noopener noreferrer" class="btn-wizard-next">
+          <span>Quiero resultados similares</span>
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Resource Unlock -->
+  <div class="modal-overlay" id="unlock-modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">Desbloquear Recurso Académico</h3>
+        <button type="button" class="modal-close-btn" aria-label="Cerrar">&times;</button>
+      </div>
+      <form id="unlock-form">
+        <div class="modal-body">
+          <div style="background-color: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 0.75rem; padding: 1rem; margin-bottom: 1.25rem;">
+            <div style="font-weight: 700; font-size: 0.875rem; color: #064e3b;" id="unlock-modal-title">Manual Práctico de Metodología Científica</div>
+            <div style="font-size: 0.75rem; color: #047857;">Descarga instantánea y plantilla editable.</div>
+          </div>
+
+          <div>
+            <label style="font-size: 0.8125rem; font-weight: 600; display: block; margin-bottom: 0.35rem;">Ingresa tu correo para recibir el enlace directo:</label>
+            <input type="email" class="wizard-input" style="width: 100%;" placeholder="tu.correo@universidad.edu.pe" required />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="evaluacion.html" class="btn-wizard-next">
+            <i class="fa-solid fa-unlock"></i> Desbloquear y Descargar
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 4: Blog Article Reader -->
+  <div class="modal-overlay" id="blog-modal">
+    <div class="modal-dialog modal-dialog--wide">
+      <div class="modal-header">
+        <div>
+          <span class="blog-category-badge" style="position: static; margin-bottom: 0.35rem; display: inline-block;" id="blog-modal-category">Metodología</span>
+          <h3 class="modal-title" id="blog-modal-title" style="font-size: 1.15rem; line-height: 1.3;">Artículo Metodológico</h3>
+          <div style="font-size: 0.75rem; color: var(--slate-500); margin-top: 0.25rem;" id="blog-modal-meta">5 min de lectura · Normas SUNEDU</div>
+        </div>
+        <button type="button" class="modal-close-btn" aria-label="Cerrar">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="blog-modal-body" style="font-size: 0.9375rem; line-height: 1.7; color: var(--slate-700); display: flex; flex-direction: column; gap: 0.85rem;">
+          <!-- Loaded dynamically from main.js -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-wizard-back modal-close-btn">Cerrar lectura</button>
+        <a href="evaluacion.html" class="btn-wizard-next">
+          <span>Consultar mi duda con un asesor</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Application Bundle -->
+  <script src="js/main.js"></script>
+</body>
+</html>
